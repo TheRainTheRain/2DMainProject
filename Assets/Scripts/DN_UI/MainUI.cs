@@ -14,7 +14,7 @@ public class MainUI : MonoBehaviour
 
     private void OnClick_Exit()
     {
-        DaniTechUIManager.Instance.OpenPopupUI();
+        //DaniTechUIManager.Instance.OpenPopupUI();
     }
 
 

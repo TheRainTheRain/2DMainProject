@@ -20,7 +20,8 @@ public enum DaniTechUIType
     DNDialogueUI,
     DNInfoBookUI,
     OpeningUI,
-    RobbyUI
+    RobbyUI,
+    MainUI
 }
 
 public static class DaniTechUIManagerExtension
@@ -39,7 +40,7 @@ public static class DaniTechUIManagerExtension
     {
         uiManager.OpenContentUI(DaniTechUIType.RobbyUI);
         uiManager.OpenContentUI(DaniTechUIType.OpeningUI);
-        uiManager.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.DNMainUI);
+        uiManager.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
         // 게임 로비 UI를 여기서 오픈해주자 -> uiManager.
         // MainUI도
     }
