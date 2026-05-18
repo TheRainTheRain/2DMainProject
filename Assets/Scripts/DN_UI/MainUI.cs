@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MainUI : MonoBehaviour
+public class MainUI : DaniTechUIBase
 {
     [SerializeField] private DaniTechUIButton Button_Exit;
 
@@ -14,10 +14,7 @@ public class MainUI : MonoBehaviour
 
     private void OnClick_Exit()
     {
-        //DaniTechUIManager.Instance.OpenPopupUI();
+        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.OpeningExitPopupUI);
+        Debug.Log("타이틀로 돌아갑니다.");
     }
-
-
-
-
 }

@@ -14,12 +14,12 @@ public class RobbyUI : DaniTechUIBase
     private void OnClick_GoToWork()
     {
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.RobbyUI);
-        Debug.Log("나 눌려졌어!!!!!!!!!");
+        Debug.Log("메인 UI로 넘어갑니다.");
     }
 
     private void OnClick_Exit()
     {
-        DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.OpeningUI);
-        Debug.Log("Exit 하겠습니다.");
+        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.OpeningExitPopupUI);
+        Debug.Log("타이틀로 돌아갑니다.");
     }
 }

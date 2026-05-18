@@ -21,7 +21,8 @@ public enum DaniTechUIType
     DNInfoBookUI,
     OpeningUI,
     RobbyUI,
-    MainUI
+    MainUI,
+    OpeningExitPopupUI
 }
 
 public static class DaniTechUIManagerExtension
@@ -121,6 +122,17 @@ public static class DaniTechUIManagerExtension
     public static void OpenOpeningUI(this DaniTechUIManager uiManager)
     {
         var uiBase = uiManager.OpenUI(DaniTechUIRootType.ContentUI, DaniTechUIType.OpeningUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning($"UI가 생성되지 않았습니다");
+            return;
+        }
+    }
+
+    public static void OpenOpeningExitUI(this DaniTechUIManager uiManager)
+    {
+        var uiBase = uiManager.OpenUI(DaniTechUIRootType.PopupUI, DaniTechUIType.OpeningExitPopupUI
+);
         if (uiBase == null)
         {
             Debug.LogWarning($"UI가 생성되지 않았습니다");
