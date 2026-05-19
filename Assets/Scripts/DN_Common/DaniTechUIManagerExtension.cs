@@ -22,7 +22,8 @@ public enum DaniTechUIType
     OpeningUI,
     RobbyUI,
     MainUI,
-    OpeningExitPopupUI
+    OpeningExitPopupUI,
+    CocktailListUI
 }
 
 public static class DaniTechUIManagerExtension
