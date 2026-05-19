@@ -175,6 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8122019911831928963}
+  - component: {fileID: 7338742797508623469}
   m_Layer: 5
   m_Name: CocktailSlot
   m_TagString: Untagged
@@ -202,6 +203,19 @@ RectTransform:
   m_AnchoredPosition: {x: -328.1, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7338742797508623469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7753509405059316337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aff0bbb470e07046a0af1bdaef0100d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CocktailSlotUI
+  Text_SlotName: {fileID: 6557621139079167837}
 --- !u!1 &8332796074791441302
 GameObject:
   m_ObjectHideFlags: 0
