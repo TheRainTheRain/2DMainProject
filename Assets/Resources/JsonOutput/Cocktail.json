@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "Cocktail_SugarRush_1",
+    "Name": "슈가 러쉬",
+    "Description": null,
+    "TasteType": "달콤함",
+    "FromType": "여성적임",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_SparkleStar_1",
+    "Name": "스파클 스타",
+    "Description": null,
+    "TasteType": "달콤함",
+    "FromType": "여성적임",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_BlueFairy_1",
+    "Name": "블루 페어리",
+    "Description": null,
+    "TasteType": "달콤함",
+    "FromType": "여성적임",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_Brandtini_1",
+    "Name": "브랜티니",
+    "Description": null,
+    "TasteType": "달콤함",
+    "FromType": "고급스러움",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_PianoWoman_1",
+    "Name": "피아노 우먼",
+    "Description": null,
+    "TasteType": "달콤함",
+    "FromType": "여성적임",
+    "IconPath": null
+  }
+]
