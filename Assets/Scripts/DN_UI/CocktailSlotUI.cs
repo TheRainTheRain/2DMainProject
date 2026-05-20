@@ -21,7 +21,7 @@ public class CocktailSlotUI : MonoBehaviour
 
     private void OnClick_Slot()
     {
-        _onClickSlot.Invoke(_slotDataId);
+        _onClickSlot?.Invoke(_slotDataId);
     }
 
     private void OnDisable()
@@ -29,7 +29,7 @@ public class CocktailSlotUI : MonoBehaviour
         _onClickSlot = null;
     }
 
-    public void IniSlot(string dataId, Action<string> onClickCallback)
+    public void InitSlot(string dataId, Action<string> onClickCallback)
     {
         var cocktailData = DaniTechGameDataManager.Instance.GetCocktailData(dataId);
         if (cocktailData == null)

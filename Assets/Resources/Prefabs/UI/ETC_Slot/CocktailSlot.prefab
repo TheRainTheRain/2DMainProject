@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CocktailSlotUI
   Text_SlotName: {fileID: 6557621139079167837}
+  Button_SlotClick: {fileID: 7518168405095805675}
 --- !u!1 &8332796074791441302
 GameObject:
   m_ObjectHideFlags: 0
