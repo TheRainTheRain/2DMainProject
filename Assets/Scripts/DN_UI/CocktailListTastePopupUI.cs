@@ -38,6 +38,7 @@ public class CocktailListTastePopupUI : DaniTechUIBase
     private void OnEnable()
     {
         ReadCocktailListAndCreateSlot();
+
     }
 
 
@@ -84,5 +85,10 @@ public class CocktailListTastePopupUI : DaniTechUIBase
 
         slotComponent.IniSlot(dataId);
         _slotList.Add(dataId, slotComponent);
+    }
+    
+    private void OnClickChildSlotSelected()
+    {
+
     }
 }

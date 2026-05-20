@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8122019911831928963}
-  - component: {fileID: 7338742797508623469}
+  - component: {fileID: 2416860712053612855}
   m_Layer: 5
   m_Name: CocktailSlot
   m_TagString: Untagged
@@ -203,7 +203,7 @@ RectTransform:
   m_AnchoredPosition: {x: -328.1, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7338742797508623469
+--- !u!114 &2416860712053612855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

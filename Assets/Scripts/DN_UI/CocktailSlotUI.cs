@@ -1,34 +1,35 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class CocktailSlotUI : MonoBehaviour
 {
-    public enum TasteType
-    {
-        Sweet,
-        Bitter,
-        Sour,
-        Bubbly,
-        Spicy
-    }
-
-    public enum FromType
-    {
-        Girly,
-        Manly,
-        Classic,
-        Classy,
-        Promo
-    }
-
-
     [SerializeField] private Text Text_SlotName;
+    [SerializeField] private DaniTechUIButton Button_SlotClick;
+
+    private event Action<string> _onClickSlot;
 
     private string _slotDataId;
 
+    private void OnEnable()
+    {
+        Button_SlotClick.BindOnClickButtonEvent(OnClick_Slot);
+    }
 
-    public void IniSlot(string dataId)
+
+    private void OnClick_Slot()
+    {
+        _onClickSlot.Invoke(_slotDataId);
+    }
+
+    private void OnDisable()
+    {
+        _onClickSlot = null;
+    }
+
+    public void IniSlot(string dataId, Action<string> onClickCallback)
     {
         var cocktailData = DaniTechGameDataManager.Instance.GetCocktailData(dataId);
         if (cocktailData == null)
@@ -41,6 +42,6 @@ public class CocktailSlotUI : MonoBehaviour
 
 
         _slotDataId = dataId;
-
+        _onClickSlot += onClickCallback;
     }
 }
