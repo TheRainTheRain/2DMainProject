@@ -34,7 +34,7 @@ public class CocktailDictionaryPopupUI : DaniTechUIBase
         Text_CockTailName.text = data.Name;
         Text_CockTailMakeRecipe.text = data.MakeRecipe;
         Text_CockTailDescription.text = data.Description;
-        Text_CockTailType.text = $"{data.TasteType}, {data.FromType}";
+        Text_CockTailType.text = $"{data.TasteType}, {data.FromType}, {data.MoodType}";
 
         Text_CockTailMakeRecipe.text = HighlightKeywords(data.MakeRecipe);
         Text_CockTailDescription.text = HighlightKeywords(data.Description);

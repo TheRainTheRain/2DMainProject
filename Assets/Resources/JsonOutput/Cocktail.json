@@ -6,6 +6,7 @@
     "MakeRecipe": "슈가 러쉬는 아델하이드 2, 델타 가루 1, 카모트린 추가 가능, 전부 넣고 섞을 것.",
     "TasteType": "달콤한 드링크",
     "FromType": "여성적임",
+    "MoodType": "행복함",
     "IconPath": null
   },
   {
@@ -15,6 +16,7 @@
     "MakeRecipe": "스파클 스타는 아델하이드 2, 델타 가루 1, 카모트린 추가 가능 전부 넣고 숙성시키고 섞을 것,",
     "TasteType": "달콤한 드링크",
     "FromType": "여성적임",
+    "MoodType": "행복함",
     "IconPath": null
   },
   {
@@ -24,6 +26,7 @@
     "MakeRecipe": "블루 페어리는 아델하이드 4, 플래너자이드 1, 카모트린 추가 가능, 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "달콤한 드링크",
     "FromType": "여성적임",
+    "MoodType": "부드러움",
     "IconPath": null
   },
   {
@@ -33,6 +36,7 @@
     "MakeRecipe": "브랜티니는 아델하이드 6, 델타 가루 3, 카모트린 1 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "달콤한 드링크",
     "FromType": "고급스러움",
+    "MoodType": "행복함",
     "IconPath": null
   },
   {
@@ -42,6 +46,7 @@
     "MakeRecipe": "피아노 우먼은 아델하이드 5, 브론순 추출액 5, 델타 가루 2, 플래너자이드 3, 카모트린 3 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "달콤한 드링크",
     "FromType": "판촉용",
+    "MoodType": "행복함",
     "IconPath": null
   },
   {
@@ -51,6 +56,7 @@
     "MakeRecipe": "거트 펀치는 브론순 추출액 5, 플래너자이드 1, 카모트린 추가 가능 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "쓴 드링크",
     "FromType": "남성적임",
+    "MoodType": "강함",
     "IconPath": null
   },
   {
@@ -60,6 +66,7 @@
     "MakeRecipe": "파일 드라이버는 브론순 추출액 3, 플래너자이드 3, 카모트린 4 전부 넣고 섞을 것.",
     "TasteType": "쓴 드링크",
     "FromType": "남성적임",
+    "MoodType": "화끈함",
     "IconPath": null
   },
   {
@@ -69,6 +76,7 @@
     "MakeRecipe": "수플렉스는 브론순 추출액 4, 플래너자이드, 3, 카모트린 3 전부 넣고 온더록스하고 섞을 것.",
     "TasteType": "쓴 드링크",
     "FromType": "남성적임",
+    "MoodType": "화끈함",
     "IconPath": null
   },
   {
@@ -78,6 +86,7 @@
     "MakeRecipe": "플러피 드림은 아델하이드 3, 델타 가루 3 카모트린 추가 가능. 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "시큼한 드링크",
     "FromType": "여성적임",
+    "MoodType": "부드러움",
     "IconPath": null
   },
   {
@@ -87,6 +96,7 @@
     "MakeRecipe": "배드 터치는 브론순 추출액 2, 델타 가루 2, 플래너자이드 2, 카모트린 4 전부 넣고 온더록스하고 섞을 것.",
     "TasteType": "시큼한 드링크",
     "FromType": "고급스러움",
+    "MoodType": "유서 깊음",
     "IconPath": null
   },
   {
@@ -96,6 +106,7 @@
     "MakeRecipe": "젠 스타는 모든 재료를 4개씩 전부 넣고 온더록스하고 섞을 것.",
     "TasteType": "시큼한 드링크",
     "FromType": "판촉용",
+    "MoodType": "단순함",
     "IconPath": null
   },
   {
@@ -105,6 +116,7 @@
     "MakeRecipe": "블룸 라이트는 아델하이드 4, 델타 가루 1, 플래너자이드 2 와 카모트린 3 전부 숙성시키고, 전부 넣고 온더록스하고 섞을 것.",
     "TasteType": "자극적인 드링크",
     "FromType": "판촉용",
+    "MoodType": "단순함",
     "IconPath": null
   },
   {
@@ -114,6 +126,7 @@
     "MakeRecipe": "맥주는 아델하이드 1, 브론순 추출액 2, 델타 가루 1, 플래너자이드 2, 카모트린 4 전부 넣고 섞을 것.",
     "TasteType": "거품 많은 드링크",
     "FromType": "클래식",
+    "MoodType": "유서 깊음",
     "IconPath": null
   },
   {
@@ -123,6 +136,7 @@
     "MakeRecipe": "프로씨 워터는 아델하이드 1, 브론순 추출액 1, 델타 가루 1, 플래너자이드 1 전부 넣고 숙성시키고 섞을 것",
     "TasteType": "거품 많은 드링크",
     "FromType": "클래식",
+    "MoodType": "단순함",
     "IconPath": null
   },
   {
@@ -132,6 +146,7 @@
     "MakeRecipe": "코발트 벨벳은 아델하이드 2, 플래너자이드 3 ,카모트린 5, 전부 넣고 온더록스하고 섞을 것",
     "TasteType": "거품 많은 드링크",
     "FromType": "고급스러움",
+    "MoodType": "화끈함",
     "IconPath": null
   },
   {
@@ -141,6 +156,7 @@
     "MakeRecipe": "프린지 위버는 아델하이드 1, 카모트린 9 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "거품 많은 드링크",
     "FromType": "고급스러움",
+    "MoodType": "강함",
     "IconPath": null
   }
 ]
