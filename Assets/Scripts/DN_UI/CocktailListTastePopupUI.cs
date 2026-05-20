@@ -40,6 +40,8 @@ public class CocktailListTastePopupUI : DaniTechUIBase
     private void OnEnable()
     {
         clearAllSlot();
+        clearNameSlot();
+        ClearTextUI();
         ReadCocktailListAndCreateSlot();
     }
 
@@ -176,5 +178,11 @@ public class CocktailListTastePopupUI : DaniTechUIBase
             }
         }
         _slotList.Clear();
+    }
+
+    private void ClearTextUI()
+    {
+        if (Taste_CocktailTaste != null) Taste_CocktailTaste.text = string.Empty;
+        if (Text_CocktailName != null) Text_CocktailName.text = string.Empty;
     }
 }
