@@ -2,7 +2,8 @@
   {
     "Id": "Cocktail_SugarRush_1",
     "Name": "슈가 러쉬",
-    "Description": null,
+    "Description": "\"상큼하게, 맑게, 자신 있게, 이걸 마시는 여성처럼\"",
+    "MakeRecipe": "슈가 러쉬는 아델하이드 2, 델타가루 1, 카모트린 추가 가능, 전부 넣고 섞을 것.",
     "TasteType": "달콤한 드링크",
     "FromType": "여성적임",
     "IconPath": null
@@ -10,7 +11,8 @@
   {
     "Id": "Cocktail_SparkleStar_1",
     "Name": "스파클 스타",
-    "Description": null,
+    "Description": "\"이건 원래 실제로 쏘는 맛이 있었는데, 사람들이 이걸 마시면 피부 트러블이 생긴다는 불만이 폭주해서 탄산 없이 다시 만들어졌어.\"",
+    "MakeRecipe": "스파클 스타는 아델하이드 2, 델타가루 1, 카모트린 추가 가능 전부 넣고 숙성시키고 섞을 것,",
     "TasteType": "달콤한 드링크",
     "FromType": "여성적임",
     "IconPath": null
@@ -18,7 +20,8 @@
   {
     "Id": "Cocktail_BlueFairy_1",
     "Name": "블루 페어리",
-    "Description": null,
+    "Description": "\"한 잔만 마셔도 이가 전부 파란색으로 변한다, 양치질 잘하길 바란다.\"",
+    "MakeRecipe": "블루 페어리는 아델하이드 4, 플래너자이드 1, 카모트린 추가 가능, 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "달콤한 드링크",
     "FromType": "여성적임",
     "IconPath": null
@@ -26,7 +29,8 @@
   {
     "Id": "Cocktail_Brandtini_1",
     "Name": "브랜티니",
-    "Description": null,
+    "Description": "\"잘난 척하는 똥꼬놈들 십중팔구가 이걸 원하지만, 그놈들 똥꼬가 잘난 척하느라 너무 바쁘다.\"",
+    "MakeRecipe": "브랜티니는 아델하이드 6, 델타 가루 3, 카모트린 1 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "달콤한 드링크",
     "FromType": "고급스러움",
     "IconPath": null
@@ -34,7 +38,8 @@
   {
     "Id": "Cocktail_PianoWoman_1",
     "Name": "피아노 우먼",
-    "Description": null,
+    "Description": "\"이건 원래 프리티 우먼이라고 불렸던 건데, 피아노 맨이 있으면 피아노 우먼도 있어야 하는 거 아니냐는 사람들이 있어서 그만.\"",
+    "MakeRecipe": "피아노 우먼은 아델하이드 5, 브론순 추출액 5, 델타 가루 2, 플래너자이드 3, 카모트린 3 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "달콤한 드링크",
     "FromType": "판촉용",
     "IconPath": null
@@ -42,7 +47,8 @@
   {
     "Id": "Cocktail_GutPunch_1",
     "Name": "거트 펀치",
-    "Description": null,
+    "Description": "\"이건 '내장으로 만든 펀치'라는 뜻인데, 사실은 이걸 마시면 드는 느낌에 따라 붙인 이름이다.\"",
+    "MakeRecipe": "거트 펀치는 브론순 추출액 5, 플래너자이드 1, 카모트린 추가 가능 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "쓴 드링크",
     "FromType": "남성적임",
     "IconPath": null
@@ -50,7 +56,8 @@
   {
     "Id": "Cocktail_Piledriver_1",
     "Name": "파일 드라이버",
-    "Description": null,
+    "Description": "\"이걸 마신다고 혀를 다치거나 하진 않아, 그래도 목 아플때는 마시지 않는게 좋을걸...\"",
+    "MakeRecipe": "파일 드라이버는 브론순 추출액 3, 플래너자이드 3, 카모트린 4 전부 넣고 섞을 것.",
     "TasteType": "쓴 드링크",
     "FromType": "남성적임",
     "IconPath": null
@@ -58,7 +65,8 @@
   {
     "Id": "Cocktail_Suplex_1",
     "Name": "수플렉스",
-    "Description": null,
+    "Description": "\"파일 드라이버랑 살짝 다른데 혀가 불타는 맛이 좀 더 강조되고 목이 타는 느낌은 좀 줄었어.\"",
+    "MakeRecipe": "수플렉스는 브론순 추출액 4, 플래너자이드, 3, 카모트린 3 전부 넣고 온더록스하고 섞을 것.",
     "TasteType": "쓴 드링크",
     "FromType": "남성적임",
     "IconPath": null
@@ -66,7 +74,8 @@
   {
     "Id": "Cocktail_FluffyDream_1",
     "Name": "플러피 드림",
-    "Description": null,
+    "Description": "\"두어 잔 마시면 혀가 부-드럽게 풀리고, 좀 더 마시면 죽은 듯이 자게 될 거다.\"",
+    "MakeRecipe": "플러피 드림은 아델하이드 3, 델타 가루 3 카모트린 추가 가능. 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "시큼한 드링크",
     "FromType": "여성적임",
     "IconPath": null
@@ -74,7 +83,8 @@
   {
     "Id": "Cocktail_BadTouch_1",
     "Name": "배드 터치",
-    "Description": null,
+    "Description": "\"우리는 결국 포유류에 지나지 않는다네.\"",
+    "MakeRecipe": "배드 터치는 브론순 추출액 2, 델타 가루 2, 플래너자이드 2, 카모트린 4 전부 넣고 온더록스하고 섞을 것.",
     "TasteType": "시큼한 드링크",
     "FromType": "고급스러움",
     "IconPath": null
@@ -82,7 +92,8 @@
   {
     "Id": "Cocktail_ZenStar_1",
     "Name": "젠스타",
-    "Description": null,
+    "Description": "\"재료 비율이 균형 잡혀 있다면 더 맛있을 것 같은가요? 절대 아닙니다.\"",
+    "MakeRecipe": "젠 스타는 모든 재료를 4개씩 전부 넣고 온더록스하고 섞을 것.",
     "TasteType": "시큼한 드링크",
     "FromType": "판촉용",
     "IconPath": null
@@ -90,7 +101,8 @@
   {
     "Id": "Cocktail_BloomLight_1",
     "Name": "블룸 라이트",
-    "Description": null,
+    "Description": "\"이건 색이 아주 쓸데없이 갈색이야.......\"",
+    "MakeRecipe": "블룸 라이트는 아델하이드 4, 델타 가루 1, 플래너자이드 2 와 카모트린 3 전부 숙성시키고, 전부 넣고 온더록스하고 섞을 것.",
     "TasteType": "자극적인 드링크",
     "FromType": "판촉용",
     "IconPath": null
@@ -98,7 +110,8 @@
   {
     "Id": "Cocktail_Beer_1",
     "Name": "맥주",
-    "Description": null,
+    "Description": "\"전통 방식으로 양조된 맥주는 고급품이 되었지만, 이정도면 원조와 거의 비슷하다고 할 수 있을것이다....\" ",
+    "MakeRecipe": "맥주는 아델하이드 1, 브론순 추출액 2, 델타 가루 1, 플래너자이드 2, 카모트린 4 전부 넣고 섞을 것.",
     "TasteType": "거품 많은 드링크",
     "FromType": "클래식",
     "IconPath": null
@@ -106,7 +119,8 @@
   {
     "Id": "Cocktail_FrothyWater_1",
     "Name": "프로씨 워터",
-    "Description": null,
+    "Description": "\"2040년 이래로 12세 이상 시청가 방송에서 계속 사랑받아온 맥주 대용품.\"",
+    "MakeRecipe": "프로씨 워터는 아델하이드 1, 브론순 추출액 1, 델타 가루 1, 플래너자이드 1 전부 넣고 숙성시키고 섞을 것",
     "TasteType": "거품 많은 드링크",
     "FromType": "클래식",
     "IconPath": null
@@ -114,7 +128,8 @@
   {
     "Id": "Cocktail_CobaltVelvet_1",
     "Name": "코발트 벨벳",
-    "Description": null,
+    "Description": "\"이거 꼭 콜라 남은 컵에 샴페인 ᄄᆞ라준거 같네만...\"",
+    "MakeRecipe": "코발트 벨벳은 아델하이드 2, 플래너자이드 3 ,카모트린 5, 전부 넣고 온더록스하고 섞을 것",
     "TasteType": "거품 많은 드링크",
     "FromType": "고급스러움",
     "IconPath": null
@@ -122,7 +137,8 @@
   {
     "Id": "Cocktail_FringeWeaver_1",
     "Name": "프린지 위버",
-    "Description": null,
+    "Description": "\"이거 꼭 에틸알코올에 설탕 한 숟같 타서 마시는 것 같네....\"",
+    "MakeRecipe": "프린지 위버는 아델하이드 1, 카모트린 9 전부 넣고 숙성시키고 섞을 것.",
     "TasteType": "거품 많은 드링크",
     "FromType": "고급스러움",
     "IconPath": null
