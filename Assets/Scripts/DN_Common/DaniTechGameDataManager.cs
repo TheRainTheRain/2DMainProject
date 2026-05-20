@@ -35,6 +35,12 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, DNDialogueData> DialogueDataList { get; private set; } = new Dictionary<string, DNDialogueData>();
     public Dictionary<string, DNFieldObjectData> FieldObjectDataList { get; private set; } = new Dictionary<string, DNFieldObjectData>();
     public Dictionary<string, DNMonsterData> MonsterDataList { get; private set; } = new Dictionary<string, DNMonsterData>();
+    public Dictionary<string, CocktailData> CocktailDataList { get; private set; } = new Dictionary<string, CocktailData>();
+
+    private Dictionary<string, CocktailData> GetCocktailDataList()
+    {
+        return CocktailDataList;
+    }
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -100,6 +106,11 @@ public class DaniTechGameDataManager : MonoBehaviour
         ItemDataList = LoadData<DNItemData>(jsonPath);
     }
 
+    public void LoadCocktailData(string jsonPath)
+    {
+        CocktailDataList = LoadData<CocktailData>(jsonPath);
+    }
+
     public void LoadDNDialogueData()
     {
         DialogueGroupDataList = LoadData<DNDialogueGroupData>("DNDialogueGroup");
@@ -149,6 +160,13 @@ public class DaniTechGameDataManager : MonoBehaviour
         if (ItemDataList == null || string.IsNullOrEmpty(id)) return null;
 
         return ItemDataList.TryGetValue(id, out var data) ? data : null;
+    }
+
+    public CocktailData GetCocktailData(string id)
+    {
+        if (CocktailDataList == null || string.IsNullOrEmpty(id)) return null;
+
+        return CocktailDataList.TryGetValue(id, out var data) ? data : null;
     }
 
     public DNDialogueGroupData GetDNDialogueGroupData(string dataId)

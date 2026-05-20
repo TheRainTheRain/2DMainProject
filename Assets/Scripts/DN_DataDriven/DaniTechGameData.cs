@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections.Generic;
 
 [System.Serializable]
@@ -51,6 +52,16 @@ public class DNItemData : GameDataBase
     public string Grade;
     public string MaxStackCount;
     public string SellingPrice;
+    public string IconPath;
+}
+
+[System.Serializable]
+public class CocktailData : GameDataBase
+{
+    public string Name;
+    public string Description;
+    public string TasteType;
+    public string FromType;
     public string IconPath;
 }
 

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public enum TasteType
@@ -8,6 +9,15 @@ public enum TasteType
     Sour,
     Bubbly,
     Spicy     
+}
+
+public enum FromType
+{
+    Girly,
+    Manly,
+    Classic,
+    Classy,
+    Promo
 }
 
 public class CocktailListTastePopupUI : DaniTechUIBase
@@ -23,35 +33,56 @@ public class CocktailListTastePopupUI : DaniTechUIBase
     [SerializeField] private Transform Transform_TasteSlotRoot;
     [SerializeField] private Transform Transform_NameSlotRoot;
 
+    private Dictionary<string, CocktailSlotUI> _slotList = new Dictionary<string, CocktailSlotUI>();
+
+    private void OnEnable()
+    {
+        ReadCocktailListAndCreateSlot();
+    }
+
+
+
+    private void ReadCocktailListAndCreateSlot()
+    {
+        var dataList = DaniTechGameDataManager.Instance.CocktailDataList;
+        List<string> createdTastes = new List<string>();
+
+        foreach (var dataKv in dataList)
+        {
+            var data = dataKv.Value;
+            if (data == null)
+            {
+                continue;
+            }
+
+            if (createdTastes.Contains(data.TasteType))
+            {
+                continue;
+            }
+
+            createdTastes.Add(data.TasteType);
+            CocktailListSlot(data.Id);
+        }
+    }
+
+
     private void CocktailListSlot(string dataId)
     {
-        var gObj = Instantiate(Prefeb_Slot);
+        var gObj = Instantiate(Prefeb_Slot, Transform_TasteSlotRoot);
         if (gObj == null)
         {
-            Debug.Log("객체의 데이터가 없습니다.");
+            Debug.LogWarning("객체의 데이터가 없습니다.");
             return;
         }
 
         var slotComponent = gObj.GetComponent<CocktailSlotUI>();
         if (slotComponent == null)
         {
-            Debug.Log("컴포넌트를 가져오지 못했습니다.");
+            Debug.LogWarning("컴포넌트를 가져오지 못했습니다.");
             return;
         }
 
-
-
-
-
-
-
-
-
-
-
+        slotComponent.IniSlot(dataId);
+        _slotList.Add(dataId, slotComponent);
     }
-
-
-
-
 }
