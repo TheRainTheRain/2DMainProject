@@ -28,5 +28,7 @@ public class CocktailListUI : DaniTechUIBase
     public void OnClick_Back()
     {
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.CocktailListUI);
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.CocktailListTastePopupUI);
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.CocktailListFromPopupUI);
     }
 }

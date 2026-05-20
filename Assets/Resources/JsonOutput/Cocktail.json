@@ -36,7 +36,95 @@
     "Name": "피아노 우먼",
     "Description": null,
     "TasteType": "달콤함",
+    "FromType": "판촉용",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_GutPunch_1",
+    "Name": "거트 펀치",
+    "Description": null,
+    "TasteType": "씀",
+    "FromType": "남성적임",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_Piledriver_1",
+    "Name": "파일 드라이버",
+    "Description": null,
+    "TasteType": "씀",
+    "FromType": "남성적임",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_Suplex_1",
+    "Name": "수플렉스",
+    "Description": null,
+    "TasteType": "씀",
+    "FromType": "남성적임",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_FluffyDream_1",
+    "Name": "플러피 드림",
+    "Description": null,
+    "TasteType": "시큼함",
     "FromType": "여성적임",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_BadTouch_1",
+    "Name": "배드 터치",
+    "Description": null,
+    "TasteType": "시큼함",
+    "FromType": "고급스러움",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_ZenStar_1",
+    "Name": "젠스타",
+    "Description": null,
+    "TasteType": "시큼함",
+    "FromType": "판촉용",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_BloomLight_1",
+    "Name": "블룸 라이트",
+    "Description": null,
+    "TasteType": "자극적",
+    "FromType": "판촉용",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_Beer_1",
+    "Name": "맥주",
+    "Description": null,
+    "TasteType": "거품많음",
+    "FromType": "클래식",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_FrothyWater_1",
+    "Name": "프로씨 워터",
+    "Description": null,
+    "TasteType": "거품많음",
+    "FromType": "클래식",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_CobaltVelvet_1",
+    "Name": "코발트 벨벳",
+    "Description": null,
+    "TasteType": "거품많음",
+    "FromType": "고급스러움",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_FringeWeaver_1",
+    "Name": "프린지 위버",
+    "Description": null,
+    "TasteType": "거품많음",
+    "FromType": "고급스러움",
     "IconPath": null
   }
 ]
