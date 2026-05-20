@@ -39,6 +39,7 @@ public class CocktailListTastePopupUI : DaniTechUIBase
 
     private void OnEnable()
     {
+        clearAllSlot();
         ReadCocktailListAndCreateSlot();
     }
 
@@ -93,6 +94,13 @@ public class CocktailListTastePopupUI : DaniTechUIBase
         var currentSelectedData = DaniTechGameDataManager.Instance.GetCocktailData(slotDataId);
         if (currentSelectedData == null)
         {
+            Debug.LogWarning("칵테일의 데이터를 가져오지 못했습니다.");
+            return;
+        }
+
+        if(Text_CocktailName == null)
+        {
+            Debug.LogWarning("인스펙터가 할당되지 않았습니다.");
             return;
         }
 
@@ -113,7 +121,7 @@ public class CocktailListTastePopupUI : DaniTechUIBase
             if(data.TasteType == cocktailData)
             {
                 var nameObj = Instantiate(Prefeb_Slot, Transform_NameSlotRoot);
-                if(nameObj == null)
+                if (nameObj == null)
                 {
                     Debug.LogWarning("타입이 같지 않습니다.");
                     return;
@@ -140,5 +148,17 @@ public class CocktailListTastePopupUI : DaniTechUIBase
             }
         }
         _nameSlotObjList.Clear();
+    }
+
+    private void clearAllSlot()
+    {
+        foreach (var kvp in _slotList)
+        {
+            if (kvp.Value != null && kvp.Value.gameObject != null)
+            {
+                Destroy(kvp.Value.gameObject);
+            }
+        }
+        _slotList.Clear();
     }
 }
