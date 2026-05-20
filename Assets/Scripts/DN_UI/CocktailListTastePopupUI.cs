@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,6 +35,7 @@ public class CocktailListTastePopupUI : DaniTechUIBase
     [SerializeField] private Transform Transform_NameSlotRoot;
 
     private Dictionary<string, CocktailSlotUI> _slotList = new Dictionary<string, CocktailSlotUI>();
+    private List<GameObject> _nameSlotObjList = new List<GameObject>();
 
     private void OnEnable()
     {
@@ -88,6 +90,55 @@ public class CocktailListTastePopupUI : DaniTechUIBase
     
     private void OnClickChildSlotSelected(string slotDataId)
     {
+        var currentSelectedData = DaniTechGameDataManager.Instance.GetCocktailData(slotDataId);
+        if (currentSelectedData == null)
+        {
+            return;
+        }
 
+        Text_CocktailName.text = currentSelectedData.Name;
+
+        clearNameSlot();
+
+        var dataList = DaniTechGameDataManager.Instance.CocktailDataList;
+        string cocktailData = currentSelectedData.TasteType;
+
+        foreach (var dataKv in dataList)
+        {
+            var data = dataKv.Value;
+            if (data == null)
+            {
+                continue;
+            }
+            if(data.TasteType == cocktailData)
+            {
+                var nameObj = Instantiate(Prefeb_Slot, Transform_NameSlotRoot);
+                if(nameObj == null)
+                {
+                    Debug.LogWarning("타입이 같지 않습니다.");
+                    return;
+                }
+
+                var nameSlotComponent = nameObj.GetComponent<CocktailSlotUI>();
+                if (nameSlotComponent != null)
+                {
+                    nameSlotComponent.InitSlot(data.Id, null, isTasteDisplay: false);
+                }
+
+                _nameSlotObjList.Add(nameObj);
+            }
+        }
+    }
+
+    private void clearNameSlot()
+    {
+        foreach (var obj  in _nameSlotObjList)
+        {
+            if (obj != null)
+            {
+                Destroy(obj);
+            }
+        }
+        _nameSlotObjList.Clear();
     }
 }

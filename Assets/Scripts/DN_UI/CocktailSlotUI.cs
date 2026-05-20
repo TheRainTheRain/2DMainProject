@@ -29,7 +29,7 @@ public class CocktailSlotUI : MonoBehaviour
         _onClickSlot = null;
     }
 
-    public void InitSlot(string dataId, Action<string> onClickCallback)
+    public void InitSlot(string dataId, Action<string> onClickCallback, bool isTasteDisplay = true)
     {
         var cocktailData = DaniTechGameDataManager.Instance.GetCocktailData(dataId);
         if (cocktailData == null)
@@ -37,8 +37,16 @@ public class CocktailSlotUI : MonoBehaviour
             Debug.LogWarning("데이터를 불러올 수 없습니다.");
             return; 
         }
-
+        if (isTasteDisplay)
+        {
         Text_SlotName.text = cocktailData.TasteType;
+
+        }
+        else
+        {
+            Text_SlotName.text = cocktailData.Name;
+
+        }
 
 
         _slotDataId = dataId;
