@@ -63,6 +63,7 @@ public class CocktailData : GameDataBase
     public string TasteType;
     public string FromType;
     public string IconPath;
+    public string MakeRecipe;
 }
 
 [System.Serializable]

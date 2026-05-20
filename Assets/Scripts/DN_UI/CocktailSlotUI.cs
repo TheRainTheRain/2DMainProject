@@ -9,7 +9,7 @@ public class CocktailSlotUI : MonoBehaviour
     [SerializeField] private Text Text_SlotName;
     [SerializeField] private DaniTechUIButton Button_SlotClick;
 
-    private event Action<string> _onClickSlot;
+    private Action<string> _onClickSlot;
 
     private string _slotDataId;
 
@@ -40,16 +40,13 @@ public class CocktailSlotUI : MonoBehaviour
         if (isTasteDisplay)
         {
         Text_SlotName.text = cocktailData.TasteType;
-
         }
         else
         {
             Text_SlotName.text = cocktailData.Name;
-
         }
 
-
         _slotDataId = dataId;
-        _onClickSlot += onClickCallback;
+        _onClickSlot = onClickCallback;
     }
 }
