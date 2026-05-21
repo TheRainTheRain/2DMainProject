@@ -1,19 +1,18 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CocktailListTastePopupUI : DaniTechUIBase
+public class CocktailListFromPopupUI : DaniTechUIBase
 {
     [Header("프리팹")]
     [SerializeField] private GameObject Prefeb_Slot;
 
     [Header("디테일 정보")]
-    [SerializeField] private Text Taste_CocktailTaste;
-    [SerializeField] private Text Text_CocktailName;
+    [SerializeField] private Text txt_SearchCriteria;
+    [SerializeField] private Text txt_SelectedDetailName;
 
-    [Header("슬롯 리스트")]
-    [SerializeField] private Transform Transform_TasteSlotRoot;
+    [Header("슬롯 리스트 루트")]
+    [SerializeField] private Transform Transform_FromSlotRoot;
     [SerializeField] private Transform Transform_NameSlotRoot;
 
     private Dictionary<string, CocktailSlotUI> _slotList = new Dictionary<string, CocktailSlotUI>();
@@ -21,92 +20,66 @@ public class CocktailListTastePopupUI : DaniTechUIBase
 
     private void OnEnable()
     {
-        ClearAllSlot();
-        ClearNameSlot();
-        ClearTextUI();
+        ClearUI();
         ReadCocktailListAndCreateSlot();
     }
 
     private void ReadCocktailListAndCreateSlot()
     {
         var dataList = DaniTechGameDataManager.Instance.CocktailDataList;
-        List<string> createdTastes = new List<string>();
+        List<string> createdFroms = new List<string>();
 
         foreach (var dataKv in dataList)
         {
             var data = dataKv.Value;
-            if (data == null)
+            if (data == null) continue;
+
+            if (createdFroms.Contains(data.FromType))
             {
                 continue;
             }
 
-            if (createdTastes.Contains(data.TasteType))
-            {
-                continue;
-            }
-
-            createdTastes.Add(data.TasteType);
+            createdFroms.Add(data.FromType);
             CocktailListSlot(data.Id);
         }
     }
 
     private void CocktailListSlot(string dataId)
     {
-        var gObj = Instantiate(Prefeb_Slot, Transform_TasteSlotRoot);
-        if (gObj == null)
-        {
-            Debug.LogWarning("객체의 데이터가 없습니다.");
-            return;
-        }
+        var gObj = Instantiate(Prefeb_Slot, Transform_FromSlotRoot);
+        if (gObj == null) return;
 
         var slotComponent = gObj.GetComponent<CocktailSlotUI>();
-        if (slotComponent == null)
-        {
-            Debug.LogWarning("컴포넌트를 가져오지 못했습니다.");
-            return;
-        }
+        if (slotComponent == null) return;
 
-        slotComponent.InitSlot(dataId, OnClickChildSlotSelected);
+        slotComponent.InitSlot(dataId, OnClickChildSlotSelected, SlotTextType.From);
         _slotList.Add(dataId, slotComponent);
     }
-    
+
     private void OnClickChildSlotSelected(string slotDataId)
     {
         var currentSelectedData = DaniTechGameDataManager.Instance.GetCocktailData(slotDataId);
-        if (currentSelectedData == null)
-        {
-            Debug.LogWarning("칵테일의 데이터를 가져오지 못했습니다.");
-            return;
-        }
+        if (currentSelectedData == null) return;
 
-        if(Text_CocktailName == null)
+        if (txt_SelectedDetailName != null)
         {
-            Debug.LogWarning("인스펙터가 할당되지 않았습니다.");
-            return;
+            txt_SelectedDetailName.text = currentSelectedData.Name;
         }
-
-        Text_CocktailName.text = currentSelectedData.Name;
 
         ClearNameSlot();
 
         var dataList = DaniTechGameDataManager.Instance.CocktailDataList;
-        string cocktailData = currentSelectedData.TasteType;
+        string clickedFrom = currentSelectedData.FromType;
 
         foreach (var dataKv in dataList)
         {
             var data = dataKv.Value;
-            if (data == null)
-            {
-                continue;
-            }
-            if(data.TasteType == cocktailData)
+            if (data == null) continue;
+
+            if (data.FromType == clickedFrom)
             {
                 var nameObj = Instantiate(Prefeb_Slot, Transform_NameSlotRoot);
-                if (nameObj == null)
-                {
-                    Debug.LogWarning("타입이 같지 않습니다.");
-                    return;
-                }
+                if (nameObj == null) continue;
 
                 var nameSlotComponent = nameObj.GetComponent<CocktailSlotUI>();
                 if (nameSlotComponent != null)
@@ -121,16 +94,10 @@ public class CocktailListTastePopupUI : DaniTechUIBase
 
     private void OnClickCocktailNameSelected(string cocktailId)
     {
-        Debug.Log("버튼이 눌려졌습니다.");
         var cocktailData = DaniTechGameDataManager.Instance.GetCocktailData(cocktailId);
-
-        if (cocktailData == null)
-        {
-            return;
-        }
+        if (cocktailData == null) return;
 
         var detailPopup = DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.CocktailDictionaryPopupUI) as CocktailDictionaryPopupUI;
-
         if (detailPopup != null)
         {
             detailPopup.SetCocktailText(cocktailData);
@@ -144,19 +111,10 @@ public class CocktailListTastePopupUI : DaniTechUIBase
             if (obj != null) Destroy(obj);
         }
         _nameSlotObjList.Clear();
-
-        if (Transform_NameSlotRoot != null)
-        {
-            foreach (Transform child in Transform_NameSlotRoot)
-            {
-                Destroy(child.gameObject);
-            }
-        }
     }
 
     private void ClearAllSlot()
     {
-        // 1. 딕셔너리에 남아있는 오브젝트 확실히 파괴
         foreach (var kvp in _slotList)
         {
             if (kvp.Value != null && kvp.Value.gameObject != null)
@@ -165,19 +123,12 @@ public class CocktailListTastePopupUI : DaniTechUIBase
             }
         }
         _slotList.Clear();
-
-        if (Transform_TasteSlotRoot != null)
-        {
-            foreach (Transform child in Transform_TasteSlotRoot)
-            {
-                Destroy(child.gameObject);
-            }
-        }
     }
 
-    private void ClearTextUI()
+    private void ClearUI()
     {
-        if (Taste_CocktailTaste != null) Taste_CocktailTaste.text = string.Empty;
-        if (Text_CocktailName != null) Text_CocktailName.text = string.Empty;
+        if (txt_SelectedDetailName != null) txt_SelectedDetailName.text = string.Empty;
+        ClearNameSlot();
+        ClearAllSlot();
     }
 }

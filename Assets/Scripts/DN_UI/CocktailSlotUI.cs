@@ -3,6 +3,13 @@ using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum SlotTextType
+{
+    None = 0,
+    Taste,
+    From,
+    Name
+}
 
 public class CocktailSlotUI : MonoBehaviour
 {
@@ -10,14 +17,11 @@ public class CocktailSlotUI : MonoBehaviour
     [SerializeField] private DaniTechUIButton Button_SlotClick;
 
     private Action<string> _onClickSlot;
-
     private string _slotDataId;
 
     private void OnEnable()
     {
-        Button_SlotClick.BindOnClickButtonEvent(OnClick_Slot);
     }
-
 
     private void OnClick_Slot()
     {
@@ -29,7 +33,7 @@ public class CocktailSlotUI : MonoBehaviour
         _onClickSlot = null;
     }
 
-    public void InitSlot(string dataId, Action<string> onClickCallback, bool isTasteDisplay = true)
+    public void InitSlot(string dataId, Action<string> onClickCallback, SlotTextType slotTextType = SlotTextType.Taste)
     {
         var cocktailData = DaniTechGameDataManager.Instance.GetCocktailData(dataId);
         if (cocktailData == null)
@@ -37,16 +41,28 @@ public class CocktailSlotUI : MonoBehaviour
             Debug.LogWarning("데이터를 불러올 수 없습니다.");
             return; 
         }
-        if (isTasteDisplay)
+
+        switch (slotTextType)
         {
-        Text_SlotName.text = cocktailData.TasteType;
+            case SlotTextType.Taste:
+                Text_SlotName.text = cocktailData.TasteType;
+                break;
+            case SlotTextType.From:
+                Text_SlotName.text = cocktailData.FromType;
+                break;
+            case SlotTextType.Name:
+                Text_SlotName.text = cocktailData.Name;
+                break;
         }
-        else
-        {
-            Text_SlotName.text = cocktailData.Name;
-        }
+      
 
         _slotDataId = dataId;
         _onClickSlot = onClickCallback;
+
+        if (onClickCallback != null)
+        {
+            Button_SlotClick.BindOnClickButtonEvent(OnClick_Slot);
+        }
+
     }
 }

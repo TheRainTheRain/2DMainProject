@@ -17,11 +17,13 @@ public class CocktailListUI : DaniTechUIBase
 
     public void OnClick_Taste()
     {
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.CocktailListFromPopupUI);
         DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.CocktailListTastePopupUI);
     }
 
     public void OnClick_From()
     {
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.CocktailListTastePopupUI);
         DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.CocktailListFromPopupUI);
     }
 
