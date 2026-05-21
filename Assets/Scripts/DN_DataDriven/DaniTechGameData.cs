@@ -1,6 +1,8 @@
 ﻿using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class GameDataBase
@@ -65,6 +67,26 @@ public class CocktailData : GameDataBase
     public string IconPath;
     public string MakeRecipe;
     public string MoodType;
+}
+
+[System.Serializable]
+public class CocktailRecipe
+{
+    public string Name;
+    public int Adelhyde;
+    public int BronsonExt;
+    public int PwdDelta;
+    public int Flanergide;
+    public int Karmotrine;
+    public bool Ice;
+    public bool Age;
+    public bool Optional;
+}
+
+[System.Serializable]
+public class CocktailBase   
+{
+
 }
 
 [System.Serializable]

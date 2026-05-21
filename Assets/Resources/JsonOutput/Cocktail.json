@@ -158,5 +158,85 @@
     "FromType": "고급스러움",
     "MoodType": "강함",
     "IconPath": null
+  },
+  {
+    "Id": "Cocktail_MoonBlast_1",
+    "Name": "문 블라스트",
+    "Description": "\"매달마다 1주일씩 관찰할 수 있는 월면 강입자포와는 아무런 연관이 없습니다.\"",
+    "MakeRecipe": "문블라스트는 아델하이드 6, 델타가루 1, 플래너자이드 1, 카모트린 2 전부 넣고 온더록스하고 혼합할 것.",
+    "TasteType": "달콤한 드링크",
+    "FromType": "여성적임",
+    "MoodType": "행복함",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_GrlzzlyTemple_1",
+    "Name": "그리즐리 템플",
+    "Description": "\"이 술이 쓰였던 영화의 팬이 아니라면, 이 술을 참기는 힘들것입니다.\"",
+    "MakeRecipe": "그리즐리 템플은 아델하이드 3, 브론순 추출액 3, 델타 가루 3, 카모트린 1 전부 넣고 혼합할 것.",
+    "TasteType": "쓴 드링크",
+    "FromType": "판촉용",
+    "MoodType": "단순함",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_SunshineCloud_1",
+    "Name": "션샤인 클라우드",
+    "Description": "\"맛이 오래된 초콜릿 우유 같고 냄새도 꼭 그래. 어ᄄᅠᆫ 사람은 맛이 카라멜 캍다고 하기도 하고...\"",
+    "MakeRecipe": "션샤인 클라우드는 아델하이드 2, 브론순 추출액 2, 카모트린 추가 가능 전부 넣고 온더록스하고 혼합할 것.",
+    "TasteType": "쓴 드링크",
+    "FromType": "여성적임",
+    "MoodType": "부드러움",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_CreviceSpike_1",
+    "Name": "크레바스 스파이크",
+    "Description": "\"이걸 마시면 자네가 술이 깨던가 차가움에 머리가 깨지던가, 둘 중 하나일 거야.\"",
+    "MakeRecipe": "크레바스 스파이크는 델타 가루 2, 플래너자이드 4, 카모트린 추가 가능, 전부 넣고 혼합할 것.",
+    "TasteType": "시큼한 드링크",
+    "FromType": "남성적임",
+    "MoodType": "각성용",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_Mercuryblast_1",
+    "Name": "머큐리 블라스트",
+    "Description": "\"이 술을 제작하면서 어ᄄᅠᆫ 온도계도 피해입지 않았음을 알려드리는 바입니다.\"",
+    "MakeRecipe": "머큐리 블라스트는 아델하이드 1, 브론순 추출액 1, 델타 가루 3, 플래너자이드 3, 카모트린 2 전부넣고 온더록스하고 혼합할 것.",
+    "TasteType": "시큼한 드링크",
+    "FromType": "고급스러움",
+    "MoodType": "화끈함",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_PianoMan_1",
+    "Name": "피아노 맨",
+    "Description": "\"이 술은 술집 피아니스트 연맹 또는 구성원들의 의견을 대변하지 않습니다.\"",
+    "MakeRecipe": "피아노 맨은 아델하이드 2, 브론순 추출액 3, 델타 가루 5, 플래너자이드 5, 카모트린 3 전부 넣고 온더록스하고 섞을 것.",
+    "TasteType": "시큼한 드링크",
+    "FromType": "판촉용",
+    "MoodType": "강함",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_BleedingJane_1",
+    "Name": "블리딩 제인",
+    "Description": "\"거울 앞에 서서 블리딩 제인을 세 번 불러봐, 그럼 바보처럼 보일꺼야.\"",
+    "MakeRecipe": "블리딩 제인은 브론순 추출액 1, 델타 가루 3, 플래너자이드 3 전부 넣고 혼합할 것.",
+    "TasteType": "자극적인 드링크",
+    "FromType": "클래식",
+    "MoodType": "각성용",
+    "IconPath": null
+  },
+  {
+    "Id": "Cocktail_Mercryblast_1",
+    "Name": "마스블라스트",
+    "Description": "\"이거 한잔이면 충분히 그 행성처럼 얼굴이 붉게 된다.\"",
+    "MakeRecipe": "마스블라스트는 브론순 추출액 6, 델타 가루 1, 플래너자이드 4, 카모트린 2 전부 넣고 혼합할 것.",
+    "TasteType": "자극적인 드링크",
+    "FromType": "남성적임",
+    "MoodType": "강함",
+    "IconPath": null
   }
 ]
