@@ -36,10 +36,17 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, DNFieldObjectData> FieldObjectDataList { get; private set; } = new Dictionary<string, DNFieldObjectData>();
     public Dictionary<string, DNMonsterData> MonsterDataList { get; private set; } = new Dictionary<string, DNMonsterData>();
     public Dictionary<string, CocktailData> CocktailDataList { get; private set; } = new Dictionary<string, CocktailData>();
+    public Dictionary<string, CocktailRecipeData> CocktailRecipeDataList { get; private set; } = new Dictionary<string, CocktailRecipeData>();
+
 
     private Dictionary<string, CocktailData> GetCocktailDataList()
     {
         return CocktailDataList;
+    }
+
+    private Dictionary<string, CocktailRecipeData> GetCocktailRecipeDataList()
+    {
+        return CocktailRecipeDataList;
     }
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
@@ -163,6 +170,13 @@ public class DaniTechGameDataManager : MonoBehaviour
     }
 
     public CocktailData GetCocktailData(string id)
+    {
+        if (CocktailDataList == null || string.IsNullOrEmpty(id)) return null;
+
+        return CocktailDataList.TryGetValue(id, out var data) ? data : null;
+    }
+
+    public CocktailData GetCocktailRecipeData(string id)
     {
         if (CocktailDataList == null || string.IsNullOrEmpty(id)) return null;
 

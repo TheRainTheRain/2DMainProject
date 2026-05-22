@@ -25,6 +25,8 @@ public class CocktailDictionaryPopupUI : DaniTechUIBase
 
     public void SetCocktailText(CocktailData data)
     {
+        transform.SetAsLastSibling();
+
         if (data == null)
         {
             Debug.LogWarning("팝업에 전달된 칵테일 데이터가 null입니다.");

@@ -70,7 +70,7 @@ public class CocktailData : GameDataBase
 }
 
 [System.Serializable]
-public class CocktailRecipe
+public class CocktailRecipeData : GameDataBase
 {
     public string Name;
     public int Adelhyde;
@@ -84,7 +84,7 @@ public class CocktailRecipe
 }
 
 [System.Serializable]
-public class CocktailBase   
+public class CocktailBaseData : GameDataBase
 {
 
 }
