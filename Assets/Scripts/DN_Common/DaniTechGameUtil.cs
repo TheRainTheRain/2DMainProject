@@ -22,6 +22,7 @@ public static class DaniTechGameUtil
         DaniTechGameDataManager.Instance.LoadDNDialogueData();
         DaniTechGameDataManager.Instance.LoadAll();
         DaniTechGameDataManager.Instance.LoadCocktailData("Cocktail");
+        DaniTechGameDataManager.Instance.LoadCocktailRecipeData("CocktailRecipe");
     }
 
     public static int CalcCharacterFinalDamage(int curCharacterLevel, int levelPerDamage, bool isCritical)
@@ -33,9 +34,6 @@ public static class DaniTechGameUtil
 
     public static Sprite LoadSpriteCanBeNull(string spriteName)
     {
-        // 1. Resources/ 경로에서 이름으로 스프라이트 로드
-        // 예: spriteName이 "Sword"라면 Assets/Resources/2D/Sword.png를 찾음
-        // 이 2D같은 경로는 나중에 Sprite, Texture 등등 다양하게 바꿔도 무관합니다!
         Sprite loadedSprite = Resources.Load<Sprite>($"{spriteName}");
 
         if (loadedSprite != null)

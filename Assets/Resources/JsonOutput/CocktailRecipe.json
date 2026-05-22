@@ -9,7 +9,8 @@
     "Karmotrine": 0,
     "Ice": false,
     "Age": false,
-    "Optional": true
+    "Optional": true,
+    "IconPath": "Icon/Cocktail_SugarRush_1"
   },
   {
     "Id": "Cocktail_SparkleStar_2",
@@ -21,7 +22,8 @@
     "Karmotrine": 0,
     "Ice": false,
     "Age": true,
-    "Optional": true
+    "Optional": true,
+    "IconPath": "Icon/Cocktail_SparkleStar_1"
   },
   {
     "Id": "Cocktail_BlueFairy_2",
@@ -33,7 +35,8 @@
     "Karmotrine": 0,
     "Ice": false,
     "Age": true,
-    "Optional": true
+    "Optional": true,
+    "IconPath": "Icon/Cocktail_BlueFairy_1"
   },
   {
     "Id": "Cocktail_Brandtini_2",
@@ -45,7 +48,8 @@
     "Karmotrine": 1,
     "Ice": false,
     "Age": true,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_Brandtini_1"
   },
   {
     "Id": "Cocktail_PianoWoman_2",
@@ -57,7 +61,8 @@
     "Karmotrine": 3,
     "Ice": false,
     "Age": true,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_PianoWoman_1"
   },
   {
     "Id": "Cocktail_GutPunch_2",
@@ -69,7 +74,8 @@
     "Karmotrine": 0,
     "Ice": false,
     "Age": true,
-    "Optional": true
+    "Optional": true,
+    "IconPath": "Icon/Cocktail_GutPunch_1"
   },
   {
     "Id": "Cocktail_Piledriver_2",
@@ -81,7 +87,8 @@
     "Karmotrine": 4,
     "Ice": false,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_Piledriver_1"
   },
   {
     "Id": "Cocktail_Suplex_2",
@@ -93,7 +100,8 @@
     "Karmotrine": 3,
     "Ice": true,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_Suplex_1"
   },
   {
     "Id": "Cocktail_FluffyDream_2",
@@ -105,7 +113,8 @@
     "Karmotrine": 0,
     "Ice": false,
     "Age": false,
-    "Optional": true
+    "Optional": true,
+    "IconPath": "Icon/Cocktail_FluffyDream_1"
   },
   {
     "Id": "Cocktail_BadTouch_2",
@@ -117,7 +126,8 @@
     "Karmotrine": 4,
     "Ice": true,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_BadTouch_1"
   },
   {
     "Id": "Cocktail_ZenStar_2",
@@ -129,7 +139,8 @@
     "Karmotrine": 4,
     "Ice": true,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_ZenStar_1"
   },
   {
     "Id": "Cocktail_BloomLight_2",
@@ -141,7 +152,8 @@
     "Karmotrine": 3,
     "Ice": true,
     "Age": true,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_BloomLight_1"
   },
   {
     "Id": "Cocktail_Beer_2",
@@ -153,7 +165,8 @@
     "Karmotrine": 4,
     "Ice": false,
     "Age": true,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_Beer_1"
   },
   {
     "Id": "Cocktail_FrothyWater_2",
@@ -165,7 +178,8 @@
     "Karmotrine": 0,
     "Ice": false,
     "Age": true,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_FrothyWater_1"
   },
   {
     "Id": "Cocktail_CobaltVelvet_2",
@@ -177,7 +191,8 @@
     "Karmotrine": 5,
     "Ice": true,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_CobaltVelvet_1"
   },
   {
     "Id": "Cocktail_FringeWeaver_2",
@@ -189,7 +204,8 @@
     "Karmotrine": 9,
     "Ice": false,
     "Age": true,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_FringeWeaver_1"
   },
   {
     "Id": "Cocktail_MoonBlast_2",
@@ -201,7 +217,8 @@
     "Karmotrine": 2,
     "Ice": true,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_MoonBlast_1"
   },
   {
     "Id": "Cocktail_GrlzzlyTemple_2",
@@ -213,7 +230,8 @@
     "Karmotrine": 1,
     "Ice": false,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_GrlzzlyTemple_1"
   },
   {
     "Id": "Cocktail_SunshineCloud_2",
@@ -225,7 +243,8 @@
     "Karmotrine": 0,
     "Ice": true,
     "Age": false,
-    "Optional": true
+    "Optional": true,
+    "IconPath": "Icon/Cocktail_SunshineCloud_1"
   },
   {
     "Id": "Cocktail_CreviceSpike_2",
@@ -237,7 +256,8 @@
     "Karmotrine": 0,
     "Ice": false,
     "Age": false,
-    "Optional": true
+    "Optional": true,
+    "IconPath": "Icon/Cocktail_CreviceSpike_1"
   },
   {
     "Id": "Cocktail_Mercuryblast_2",
@@ -249,7 +269,8 @@
     "Karmotrine": 2,
     "Ice": true,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_Mercuryblast_1"
   },
   {
     "Id": "Cocktail_PianoMan_2",
@@ -261,7 +282,8 @@
     "Karmotrine": 3,
     "Ice": true,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_PianoMan_1"
   },
   {
     "Id": "Cocktail_BleedingJane_2",
@@ -273,10 +295,11 @@
     "Karmotrine": 0,
     "Ice": false,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_BleedingJane_1"
   },
   {
-    "Id": "Cocktail_Mercryblast_2",
+    "Id": "Cocktail_Mersblast_2",
     "Name": "마스블라스트",
     "Adelhyde": 0,
     "BronsonExt": 6,
@@ -285,6 +308,20 @@
     "Karmotrine": 2,
     "Ice": false,
     "Age": false,
-    "Optional": false
+    "Optional": false,
+    "IconPath": "Icon/Cocktail_Marsblast_1"
+  },
+  {
+    "Id": "Cocktail_Fail_2",
+    "Name": "F@####",
+    "Adelhyde": null,
+    "BronsonExt": null,
+    "PwdDelta": null,
+    "Flanergide": null,
+    "Karmotrine": null,
+    "Ice": null,
+    "Age": null,
+    "Optional": null,
+    "IconPath": "Icon/Cocktail_Fail_1"
   }
 ]

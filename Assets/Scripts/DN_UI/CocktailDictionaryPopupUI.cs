@@ -1,5 +1,4 @@
-﻿using Unity.Android.Gradle.Manifest;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class CocktailDictionaryPopupUI : DaniTechUIBase
@@ -33,13 +32,18 @@ public class CocktailDictionaryPopupUI : DaniTechUIBase
             return;
         }
 
-        Text_CockTailName.text = data.Name;
-        Text_CockTailMakeRecipe.text = data.MakeRecipe;
-        Text_CockTailDescription.text = data.Description;
-        Text_CockTailType.text = $"{data.TasteType}, {data.FromType}, {data.MoodType}";
+        if (Text_CockTailName != null) Text_CockTailName.text = data.Name;
+        if (Text_CockTailType != null) Text_CockTailType.text = $"{data.TasteType}, {data.FromType}, {data.MoodType}";
 
-        Text_CockTailMakeRecipe.text = HighlightKeywords(data.MakeRecipe);
-        Text_CockTailDescription.text = HighlightKeywords(data.Description);
+        if (Text_CockTailMakeRecipe != null)
+        {
+            Text_CockTailMakeRecipe.text = HighlightKeywords(data.MakeRecipe);
+        }
+
+        if (Text_CockTailDescription != null)
+        {
+            Text_CockTailDescription.text = HighlightKeywords(data.Description);
+        }
     }
     
 

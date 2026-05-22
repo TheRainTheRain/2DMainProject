@@ -2,36 +2,36 @@
   {
     "Id": "Cocktail_Base_1",
     "Name": "아델하이드",
-    "IconPath": "Icon/Adelhyde_1"
+    "IconPath": "Icon/Cocktail_Adelhyde_1"
   },
   {
     "Id": "Cocktail_Base_2",
     "Name": "브론순 추출액",
-    "IconPath": "Icon/BronsonExt_1"
+    "IconPath": "Icon/Icon_BronsonExt_1"
   },
   {
     "Id": "Cocktail_Base_3",
     "Name": "델타 가루",
-    "IconPath": "Icon/PwdDelta_1"
+    "IconPath": "Icon/Icon_PwdDelta_1"
   },
   {
     "Id": "Cocktail_Base_4",
     "Name": "플래너자이드",
-    "IconPath": "Icon/Flanergide_1"
+    "IconPath": "Icon/Icon_Flanergide_1"
   },
   {
     "Id": "Cocktail_Base_5",
     "Name": "카모트린",
-    "IconPath": "Icon/Karmotrine_1"
+    "IconPath": "Icon/Icon_Karmotrine_1"
   },
   {
     "Id": "Cocktail_Base_Ice_1",
     "Name": "얼음(온더록스)",
-    "IconPath": "Icon/Ice_1"
+    "IconPath": "Icon/Icon_Ice_1"
   },
   {
     "Id": "Cocktail_Base_Mature_1",
     "Name": "숙성",
-    "IconPath": "Icon/Age_1"
+    "IconPath": "Icon/Icon_Age_1"
   }
 ]

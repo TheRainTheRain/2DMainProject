@@ -230,13 +230,23 @@
     "IconPath": "Icon/Cocktail_BleedingJane_1"
   },
   {
-    "Id": "Cocktail_Mercryblast_1",
+    "Id": "Cocktail_Marsblast_1",
     "Name": "마스블라스트",
     "Description": "\"이거 한잔이면 충분히 그 행성처럼 얼굴이 붉게 된다.\"",
     "MakeRecipe": "마스블라스트는 브론순 추출액 6, 델타 가루 1, 플래너자이드 4, 카모트린 2 전부 넣고 혼합할 것.",
     "TasteType": "자극적인 드링크",
     "FromType": "남성적임",
     "MoodType": "강함",
-    "IconPath": "Icon/Cocktail_Mercryblast_1"
+    "IconPath": "Icon/Cocktail_Marsblast_1"
+  },
+  {
+    "Id": "Cocktail_Fail_1",
+    "Name": "F@####",
+    "Description": null,
+    "MakeRecipe": null,
+    "TasteType": null,
+    "FromType": null,
+    "MoodType": null,
+    "IconPath": "Icon/Cocktail_Fail_1"
   }
 ]

@@ -81,6 +81,7 @@ public class CocktailRecipeData : GameDataBase
     public bool Ice;
     public bool Age;
     public bool Optional;
+    public string IconPath;
 }
 
 [System.Serializable]
