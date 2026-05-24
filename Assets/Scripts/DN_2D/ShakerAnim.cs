@@ -32,4 +32,5 @@ public class ShakerAnim : MonoBehaviour
     {
         Animator_Shaker.SetBool("IsShake", false);
     }
+
 }
