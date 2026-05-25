@@ -124,7 +124,7 @@ public class MakeCocktailUI : DaniTechUIBase
         Image_Result.gameObject.SetActive(false);
         ShowShaker();
         ShakerAnim.SteShakerAnimState(ShakerAnimState.Idle);
-        ShakerAnim.SteShakerAnimState(ShakerAnimState.Idle);
+        ShakerAnim.transform.rotation = Quaternion.identity;
 
         _currentMatchedRecipe = null;
         _countAdelhyde = 0;
@@ -215,7 +215,7 @@ public class MakeCocktailUI : DaniTechUIBase
 
     private void OnRecipeMatchFail(DaniTechGameDataManager dataManager)
     {
-        HideShaker(); // ✅
+        HideShaker();
         Image_Result.gameObject.SetActive(true);
         Image_Shaker.gameObject.SetActive(false);
         Button_Submit?.gameObject.SetActive(false);
@@ -245,6 +245,7 @@ public class MakeCocktailUI : DaniTechUIBase
 
     private void ShowShaker()
     {
+        Image_Shaker.gameObject.SetActive(true);
         var color = Image_Shaker.color;
         color.a = 1f;
         Image_Shaker.color = color;

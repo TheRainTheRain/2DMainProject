@@ -31,6 +31,8 @@ public class ShakerAnim : MonoBehaviour
     private void ResetAllAnimParameters()
     {
         Animator_Shaker.SetBool("IsShake", false);
+        Animator_Shaker.Rebind();
+        Animator_Shaker.Update(0f);
     }
 
 }
