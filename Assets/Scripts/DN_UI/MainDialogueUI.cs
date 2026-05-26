@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class MainDialogueUI : DaniTechUIBase
 {
     [SerializeField] private Text Text_MainDialogue;
+    [SerializeField] private DaniTechUIButton Button_Next;
 
     private Queue<string> _dialogueQueue = new Queue<string>();
 
@@ -12,6 +13,7 @@ public class MainDialogueUI : DaniTechUIBase
     {
         LoadDialogueQueue("dialogue_group_tutorial_1_1");
         ShowNextDialogue();
+        Button_Next.BindOnClickButtonEvent(OnClick_Next);
     }
 
     private void LoadDialogueQueue(string dialogueGroupId)
@@ -48,5 +50,27 @@ public class MainDialogueUI : DaniTechUIBase
         }
 
         Text_MainDialogue.text = _dialogueQueue.Dequeue();
+    }
+
+    private bool CheckAndSetDescription()
+    {
+        bool isNextDescriptionExsit = (_dialogueQueue.Count > 0);
+        if (isNextDescriptionExsit)
+        {
+            string desc = _dialogueQueue.Dequeue();
+            Text_MainDialogue.text = desc;
+        }
+
+        return isNextDescriptionExsit;
+    }
+
+    private void OnClick_Next()
+    {
+        SetNextPage();
+    }
+
+    public void SetNextPage()
+    {
+        bool isNextDescriptionOpened = CheckAndSetDescription();
     }
 }
