@@ -128,3 +128,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e59b2416014c0b409f92a98cc38a692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainDialogueUI
+  Text_MainDialogue: {fileID: 4153524973416843402}

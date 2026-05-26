@@ -87,7 +87,7 @@ public class CocktailRecipeData : GameDataBase
 [System.Serializable]
 public class MainDialogueGroupData : GameDataBase
 {
-    public string DialogueIdList;
+    public List<string> DialogueIdList;
 }
 
 [System.Serializable]
@@ -97,8 +97,8 @@ public class MainDialogueData : GameDataBase
     public string CharacterDataId;
     public string Description;
     public string NextDialogueId;
-    public string SelectionNameList;
-    public string SelectionDialogueIdList;
+    public List<string> SelectionNameList;
+    public List<string> SelectionDialogueIdList;
     public string TexturePath;
     public string VoicePath;
 }

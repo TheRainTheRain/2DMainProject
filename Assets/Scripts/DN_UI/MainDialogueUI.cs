@@ -28,11 +28,11 @@ public class MainDialogueUI : DaniTechUIBase
 
         foreach (var dialogueId in dialogueIdList)
         {
-            var dialogueData = DaniTechGameDataManager.Instance.GetDialogueData(dialogueId);
+            var dialogueData = DaniTechGameDataManager.Instance.GetDialogueData(dialogueId.Trim());
             if (dialogueData == null)
             {
                 Debug.LogWarning("대사 데이터가 없습니다.");
-                return;
+                continue;
             }
 
             _dialogueQueue.Enqueue(dialogueData.Description);
@@ -41,7 +41,7 @@ public class MainDialogueUI : DaniTechUIBase
 
     private void ShowNextDialogue()
     {
-        if (_dialogueQueue.Count < 0)
+        if (_dialogueQueue.Count == 0)
         {
             Debug.Log("모든 대사가 종료되었습니다");
             return;

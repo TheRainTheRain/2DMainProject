@@ -138,10 +138,8 @@ public static class DaniTechGameUtil
         var data = DaniTechGameDataManager.Instance.GetMainDialogueGroupData(dialogueGroupId);
         if (data != null)
         {
-            var idArr = data.DialogueIdList.Split(",");
-            foreach(var id in idArr)
             {
-                list.Add(id);
+                return data.DialogueIdList;
             }
         }
 
