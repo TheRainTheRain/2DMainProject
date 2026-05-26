@@ -37,6 +37,8 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, DNMonsterData> MonsterDataList { get; private set; } = new Dictionary<string, DNMonsterData>();
     public Dictionary<string, CocktailData> CocktailDataList { get; private set; } = new Dictionary<string, CocktailData>();
     public Dictionary<string, CocktailRecipeData> CocktailRecipeDataList { get; private set; } = new Dictionary<string, CocktailRecipeData>();
+    public Dictionary<string, MainDialogueGroupData> MainDialogueGroupDataList { get; private set; } = new Dictionary<string, MainDialogueGroupData>();
+    public Dictionary<string, MainDialogueData> MainDialogueDataList { get; private set; } = new Dictionary<string, MainDialogueData>();
 
 
     private Dictionary<string, CocktailData> GetCocktailDataList()
@@ -121,6 +123,12 @@ public class DaniTechGameDataManager : MonoBehaviour
     public void LoadCocktailRecipeData(string jsonPath)
     {
         CocktailRecipeDataList = LoadData<CocktailRecipeData>(jsonPath);
+    }
+
+    public void LoadDialogueData()
+    {
+        MainDialogueGroupDataList = LoadData<MainDialogueGroupData>("DialogueGroup");
+        MainDialogueDataList = LoadData<MainDialogueData>("MainDialogue");
     }
 
     public void LoadDNDialogueData()
@@ -214,5 +222,19 @@ public class DaniTechGameDataManager : MonoBehaviour
         if (FieldObjectDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
         return FieldObjectDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public MainDialogueGroupData GetMainDialogueGroupData(string dataId)
+    {
+        if (MainDialogueGroupDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return MainDialogueGroupDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public MainDialogueData GetDialogueData(string dataId)
+    {
+        if (MainDialogueDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return MainDialogueDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 }

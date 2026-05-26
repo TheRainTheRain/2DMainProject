@@ -34,5 +34,4 @@ public class ShakerAnim : MonoBehaviour
         Animator_Shaker.Rebind();
         Animator_Shaker.Update(0f);
     }
-
 }

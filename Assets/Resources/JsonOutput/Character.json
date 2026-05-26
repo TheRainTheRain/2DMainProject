@@ -22,5 +22,21 @@
     "SkillList": "skill_rest_coffee_01",
     "UseWeaponId": "Weapon_CoffeeCup_1",
     "BasicCostumeId": null
+  },
+  {
+    "Id": "character_jill_01",
+    "Name": "질",
+    "Description": null,
+    "SkillList": null,
+    "UseWeaponId": null,
+    "BasicCostumeId": null
+  },
+  {
+    "Id": "character_gillian_01",
+    "Name": "길리안",
+    "Description": null,
+    "SkillList": null,
+    "UseWeaponId": null,
+    "BasicCostumeId": null
   }
 ]

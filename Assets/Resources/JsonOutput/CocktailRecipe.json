@@ -36,7 +36,7 @@
     "Ice": false,
     "Age": true,
     "Optional": true,
-    "IconPath": "Icon/Cocktail_BlueFairy_1"
+    "IconPath": "Icon/Cocktail_BlueFairy_1 "
   },
   {
     "Id": "Cocktail_Brandtini_2",
@@ -164,7 +164,7 @@
     "Flanergide": 2,
     "Karmotrine": 4,
     "Ice": false,
-    "Age": true,
+    "Age": false,
     "Optional": false,
     "IconPath": "Icon/Cocktail_Beer_1"
   },

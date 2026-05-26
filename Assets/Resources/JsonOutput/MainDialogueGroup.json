@@ -1,0 +1,27 @@
+[
+  {
+    "Id": "dialogue_group_tutorial_1_1",
+    "Comment": "길리안과의 만남",
+    "DialogueIdList": null
+  },
+  {
+    "Id": "dialogue_group_tutorial_1_2",
+    "Comment": "질의 독백",
+    "DialogueIdList": null
+  },
+  {
+    "Id": "dialogue_group_tutorial_1_3",
+    "Comment": "튜토리얼 시작",
+    "DialogueIdList": null
+  },
+  {
+    "Id": "dialogue_group_tutorial_1_3_fail",
+    "Comment": "칵테일 제조 실패",
+    "DialogueIdList": null
+  },
+  {
+    "Id": "dialogue_group_tutorial_1_3_success",
+    "Comment": "칵테일 제조 성공",
+    "DialogueIdList": null
+  }
+]
