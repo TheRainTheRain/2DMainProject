@@ -125,9 +125,9 @@ public class DaniTechGameDataManager : MonoBehaviour
         CocktailRecipeDataList = LoadData<CocktailRecipeData>(jsonPath);
     }
 
-    public void LoadDialogueData()
+    public void LoadMainDialogueData()
     {
-        MainDialogueGroupDataList = LoadData<MainDialogueGroupData>("DialogueGroup");
+        MainDialogueGroupDataList = LoadData<MainDialogueGroupData>("MainDialogueGroup");
         MainDialogueDataList = LoadData<MainDialogueData>("MainDialogue");
     }
 

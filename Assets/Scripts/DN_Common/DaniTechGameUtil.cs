@@ -23,6 +23,7 @@ public static class DaniTechGameUtil
         DaniTechGameDataManager.Instance.LoadAll();
         DaniTechGameDataManager.Instance.LoadCocktailData("Cocktail");
         DaniTechGameDataManager.Instance.LoadCocktailRecipeData("CocktailRecipe");
+        DaniTechGameDataManager.Instance.LoadMainDialogueData();
     }
 
     public static int CalcCharacterFinalDamage(int curCharacterLevel, int levelPerDamage, bool isCritical)
@@ -127,5 +128,23 @@ public static class DaniTechGameUtil
             }
             // 그 사이 다른 스레드가 값을 바꿨다면 다시 시도
         }
+    }
+
+    public static List<string> GetMainDialogueIdList(string dialogueGroupId)
+    {
+        var list = new List<string>();
+
+        //"dialogue_group_tutorial_1_1"
+        var data = DaniTechGameDataManager.Instance.GetMainDialogueGroupData(dialogueGroupId);
+        if (data != null)
+        {
+            var idArr = data.DialogueIdList.Split(",");
+            foreach(var id in idArr)
+            {
+                list.Add(id);
+            }
+        }
+
+        return list;
     }
 }

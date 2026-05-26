@@ -41,7 +41,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 206a582733ec1344282b6a5c1927bb42
-    m_Address: 'Icon/Cocktail_Beer_1 '
+    m_Address: Icon/Cocktail_Beer_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

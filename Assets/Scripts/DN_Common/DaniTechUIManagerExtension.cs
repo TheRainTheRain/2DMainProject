@@ -27,7 +27,8 @@ public enum DaniTechUIType
     CocktailListTastePopupUI,
     CocktailListFromPopupUI,
     CocktailDictionaryPopupUI,
-    MakeCocktailUI
+    MakeCocktailUI,
+    MainDialogueUI
 }
 
 public static class DaniTechUIManagerExtension
