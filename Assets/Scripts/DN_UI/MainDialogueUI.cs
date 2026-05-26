@@ -7,20 +7,46 @@ public class MainDialogueUI : DaniTechUIBase
     [SerializeField] private Text Text_MainDialogue;
     [SerializeField] private DaniTechUIButton Button_Next;
 
+    private Queue<string> _dialogueGroupQueue = new Queue<string>();
     private Queue<string> _dialogueQueue = new Queue<string>();
 
     private void OnEnable()
     {
-        LoadDialogueQueue("dialogue_group_tutorial_1_1");
-        ShowNextDialogue();
         Button_Next.BindOnClickButtonEvent(OnClick_Next);
     }
+
+    private string _nextDialogueGroupId;
+
+    public void StartDialogue(params string[] dialogueGroupIds)
+    {
+        _dialogueGroupQueue.Clear();
+        foreach (var groupId in dialogueGroupIds)
+        {
+            _dialogueGroupQueue.Enqueue(groupId);
+        }
+        LoadNextGroup();
+    }
+
+    private void LoadNextGroup()
+    {
+        if (_dialogueGroupQueue.Count == 0)
+        {
+            return;
+        }
+
+        string groupId = _dialogueGroupQueue.Dequeue();
+        LoadDialogueQueue(groupId);
+        ShowNextDialogue();
+    }
+
 
     private void LoadDialogueQueue(string dialogueGroupId)
     {
         _dialogueQueue.Clear();
 
         var dialogueIdList = DaniTechGameUtil.GetMainDialogueIdList(dialogueGroupId);
+
+        Debug.Log($"ID 개수: {dialogueIdList?.Count}");
 
         if (dialogueIdList == null)
         {
@@ -30,14 +56,7 @@ public class MainDialogueUI : DaniTechUIBase
 
         foreach (var dialogueId in dialogueIdList)
         {
-            var dialogueData = DaniTechGameDataManager.Instance.GetDialogueData(dialogueId.Trim());
-            if (dialogueData == null)
-            {
-                Debug.LogWarning("대사 데이터가 없습니다.");
-                continue;
-            }
-
-            _dialogueQueue.Enqueue(dialogueData.Description);
+            _dialogueQueue.Enqueue(dialogueId.Trim());
         }
     }
 
@@ -45,32 +64,21 @@ public class MainDialogueUI : DaniTechUIBase
     {
         if (_dialogueQueue.Count == 0)
         {
-            Debug.Log("모든 대사가 종료되었습니다");
+            LoadNextGroup();
             return;
         }
-
-        Text_MainDialogue.text = _dialogueQueue.Dequeue();
-    }
-
-    private bool CheckAndSetDescription()
-    {
-        bool isNextDescriptionExsit = (_dialogueQueue.Count > 0);
-        if (isNextDescriptionExsit)
+        string dialogueId = _dialogueQueue.Dequeue();
+        var dialogueData = DaniTechGameDataManager.Instance.GetDialogueData(dialogueId);
+        if (dialogueData == null)
         {
-            string desc = _dialogueQueue.Dequeue();
-            Text_MainDialogue.text = desc;
+            Debug.LogWarning($"대사 데이터가 없습니다: {dialogueId}");
+            return;
         }
-
-        return isNextDescriptionExsit;
+        Text_MainDialogue.text = dialogueData.Description;
     }
 
     private void OnClick_Next()
     {
-        SetNextPage();
-    }
-
-    public void SetNextPage()
-    {
-        bool isNextDescriptionOpened = CheckAndSetDescription();
+        ShowNextDialogue();
     }
 }

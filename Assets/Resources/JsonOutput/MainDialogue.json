@@ -292,7 +292,7 @@
   {
     "Id": "dialogue_tutorial_1_1_029",
     "CharacterDataId": "character_gillian_01",
-    "Description": "네가 피아노 맨을 만들 수 있을 정도 상태면, 나머지 과정은 생략할게. 그래도 웬만하면 잠ᄁᆞᆫ 참고 나랑 어울려줘, 괜찮지?",
+    "Description": "네가 피아노 맨을 만들 수 있을 정도 상태면, 나머지 과정은 생략할게. 그래도 웬만하면 잠깐참고 나랑 어울려줘, 괜찮지?",
     "NextDialogueId": "dialogue_tutorial_1_1_030",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,

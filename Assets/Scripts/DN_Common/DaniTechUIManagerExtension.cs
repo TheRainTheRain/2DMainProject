@@ -145,5 +145,20 @@ public static class DaniTechUIManagerExtension
             return;
         }
     }
+
+    public static void OpenMainDialogueUI(this DaniTechUIManager uiManager,
+    params string[] dialogueGroupIds)
+    {
+        var uiBase = uiManager.OpenContentUI(DaniTechUIType.MainDialogueUI);
+        if (uiBase == null)
+        {
+            Debug.LogWarning("UI가 생성되지 않았습니다");
+            return;
+        }
+        if (uiBase is MainDialogueUI mainDialogueUI)
+        {
+            mainDialogueUI.StartDialogue(dialogueGroupIds);
+        }
+    }
 }
 
