@@ -536,7 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e59b2416014c0b409f92a98cc38a692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainDialogueUI
-  Layout_CharacterName: {fileID: 3419863868383181040}
+  Layout_CharacterName: {fileID: 2133869447329770195}
   Text_MainDialogue: {fileID: 4153524973416843402}
   Text_Name: {fileID: 8780003890263763342}
   Button_Next: {fileID: 5006112318490890271}

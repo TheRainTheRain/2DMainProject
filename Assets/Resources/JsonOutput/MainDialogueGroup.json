@@ -64,11 +64,37 @@
   {
     "Id": "dialogue_group_tutorial_1_3_fail",
     "Comment": "칵테일 제조 실패",
-    "DialogueIdList": null
+    "DialogueIdList": [
+      "dialogue_tutorial_1_2_000",
+      "dialogue_tutorial_1_2_001",
+      "dialogue_tutorial_1_2_002",
+      "dialogue_tutorial_1_2_003",
+      "dialogue_tutorial_1_2_004",
+      "dialogue_tutorial_1_2_005",
+      "dialogue_tutorial_1_2_006",
+      "dialogue_tutorial_1_2_007",
+      "dialogue_tutorial_1_2_008",
+      "dialogue_tutorial_1_2_009",
+      "dialogue_tutorial_1_2_010",
+      "dialogue_tutorial_1_2_011"
+    ]
   },
   {
     "Id": "dialogue_group_tutorial_1_3_success",
     "Comment": "칵테일 제조 성공",
-    "DialogueIdList": null
+    "DialogueIdList": [
+      "dialogue_tutorial_1_3_000",
+      "dialogue_tutorial_1_3_001",
+      "dialogue_tutorial_1_3_002",
+      "dialogue_tutorial_1_3_003",
+      "dialogue_tutorial_1_3_004",
+      "dialogue_tutorial_1_3_005",
+      "dialogue_tutorial_1_3_006",
+      "dialogue_tutorial_1_3_007",
+      "dialogue_tutorial_1_3_008",
+      "dialogue_tutorial_1_3_009",
+      "dialogue_tutorial_1_3_010",
+      "dialogue_tutorial_1_3_011"
+    ]
   }
 ]

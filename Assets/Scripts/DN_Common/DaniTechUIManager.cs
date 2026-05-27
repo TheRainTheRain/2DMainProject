@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -125,4 +126,8 @@ public class DaniTechUIManager : MonoBehaviour
         CloseUI(DaniTechUIRootType.PopupUI, uiType);
     }
 
+    internal void OpenMainDialogueUI(string v1, string v2, string v3)
+    {
+        throw new NotImplementedException();
+    }
 }

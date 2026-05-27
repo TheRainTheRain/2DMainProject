@@ -140,6 +140,9 @@ public class MakeCocktailUI : DaniTechUIBase
         Button_Shake?.BindOnClickButtonEvent(OnClick_Shake);
         Button_Stop?.gameObject.SetActive(false);
         Button_Submit?.gameObject.SetActive(false);
+
+        Button_Submit?.UnBindOnClickButtonEvent(OnClick_Submit);
+        Button_Submit?.BindOnClickButtonEvent(OnClick_Submit);
         Debug.Log("쉐이커 깨끗하게 비움!");
     }
 
@@ -210,6 +213,8 @@ public class MakeCocktailUI : DaniTechUIBase
         HideShaker();
         Image_Result.gameObject.SetActive(true);
         Button_Submit?.gameObject.SetActive(true);
+        Button_Submit?.UnBindOnClickButtonEvent(OnClick_Submit);
+        Button_Submit?.BindOnClickButtonEvent(OnClick_Submit);
         DaniTechGameUtil.LoadAndSetSpriteImage(Image_Result, _currentMatchedRecipe.IconPath).Forget();
     }
 
@@ -231,8 +236,59 @@ public class MakeCocktailUI : DaniTechUIBase
 
     private void OnClick_Submit()
     {
-        Debug.LogWarning("제출완료");
+        Debug.Log("OnClick_Submit 호출됨!");
+        Debug.Log($"_currentMatchedRecipe null 여부: {_currentMatchedRecipe == null}");
+
+        if (_currentMatchedRecipe == null)
+        {
+            Debug.LogWarning("매칭된 레시피가 없습니다.");
+            return;
+        }
+
+        string recipeId = _currentMatchedRecipe.Id;
+        Debug.Log($"recipeId: {recipeId}");
+
+        bool isSuccess = (recipeId == "Cocktail_SugarRush_1" || recipeId == "Cocktail_PianoMan_1");
+
+        if (isSuccess)
+        {
+            OnSubmitSuccess();
+        }
+        else
+        {
+            OnSubmitFail();
+        }
+    }
+
+    private void OnSubmitSuccess()
+    {
+        Debug.Log("OnSubmitSuccess 호출됨!");
         OnClick_Retry();
+
+        var dialogueUI = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MainDialogueUI) as MainDialogueUI;
+
+        Debug.Log($"dialogueUI null 여부: {dialogueUI == null}");
+
+        if (dialogueUI != null)
+        {
+            dialogueUI.StartDialogue(null, "dialogue_group_tutorial_1_3_success");
+        }
+    }
+
+    private void OnSubmitFail()
+    {
+        OnClick_Retry();
+
+        var dialogueUI = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MainDialogueUI) as MainDialogueUI;
+        if (dialogueUI != null)
+        {
+            dialogueUI.StartDialogue(OnFailDialogueEnd, "dialogue_group_tutorial_1_3_fail");
+        }
+    }
+
+    private void OnFailDialogueEnd()
+    {
+        DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MakeCocktailUI);
     }
 
     private void HideShaker()

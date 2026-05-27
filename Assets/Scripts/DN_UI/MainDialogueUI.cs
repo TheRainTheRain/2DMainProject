@@ -13,26 +13,22 @@ public class MainDialogueUI : DaniTechUIBase
 
     private Queue<string> _dialogueGroupQueue = new Queue<string>();
     private Queue<string> _dialogueQueue = new Queue<string>();
+    private string _currentDialogueGroupId = string.Empty;
+
+    //요건 AI한테..
+    private System.Action _onDialogueEndCallback;
 
     private void OnEnable()
     {
         Button_Next.BindOnClickButtonEvent(OnClick_Next);
     }
 
-    public void StartDialogue(params string[] dialogueGroupIds)
-    {
-        _dialogueGroupQueue.Clear();
-        foreach (var groupId in dialogueGroupIds)
-        {
-            _dialogueGroupQueue.Enqueue(groupId);
-        }
-        LoadNextGroup();
-    }
-
     private void LoadNextGroup()
     {
         if (_dialogueGroupQueue.Count == 0)
         {
+            _onDialogueEndCallback?.Invoke();
+            _onDialogueEndCallback = null;
             return;
         }
 
@@ -41,6 +37,16 @@ public class MainDialogueUI : DaniTechUIBase
         ShowNextDialogue();
     }
 
+    public void StartDialogue(System.Action onEndCallback = null, params string[] dialogueGroupIds)
+    {
+        _onDialogueEndCallback = onEndCallback;
+        _dialogueGroupQueue.Clear();
+        foreach (var groupId in dialogueGroupIds)
+        {
+            _dialogueGroupQueue.Enqueue(groupId);
+        }
+        LoadNextGroup();
+    }
 
     private void LoadDialogueQueue(string dialogueGroupId)
     {
@@ -116,6 +122,7 @@ public class MainDialogueUI : DaniTechUIBase
                 string displayName = characterData.Name;
                 if (displayName.Length <= 2)
                 {
+                    // 여백을 없애주는 코드입니다.
                     Text_Name.text = $"{displayName}:\t";
                 }
                 else

@@ -438,5 +438,245 @@
     "SelectionDialogueIdList": null,
     "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_000",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "이건...내가 원하던게 아니야.",
+    "NextDialogueId": "dialogue_tutorial_1_2_001",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Dismay",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_001",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "음..다른걸 만들어보자",
+    "NextDialogueId": "dialogue_tutorial_1_2_002",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Dismay",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_002",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "음료는 \"온더록스\" 혹은 숙성을 요구하는지 확인해야 해.",
+    "NextDialogueId": "dialogue_tutorial_1_2_003",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_003",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "측면에 있는 얼음과 숙성 버튼 중 필요한 걸 선택하면 돼.",
+    "NextDialogueId": "dialogue_tutorial_1_2_004",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_004",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "혹시 용어를 모를 수도 있으니 하는 말인데, \"온더록스\"는 \"얼음\"버튼을 눌러서 얼음을 넣어야 한다는 걸 의미해",
+    "NextDialogueId": "dialogue_tutorial_1_2_005",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_005",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "이렇게 버튼을 누르면, 재료를 섞은 뒤에 기기가 자동으로 얼음을 추가시켜주지.",
+    "NextDialogueId": "dialogue_tutorial_1_2_006",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_006",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "아, 마지막 문장은 그렇게 신경쓰지 않아도 돼. 그냥 재밌는 뒷이야기 같은 거니까.",
+    "NextDialogueId": "dialogue_tutorial_1_2_007",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_007",
+    "CharacterDataId": "character_jill_01",
+    "Description": "...",
+    "NextDialogueId": "dialogue_tutorial_1_2_008",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_008",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "나한테 다시 슈가러쉬나 피아노 맨을 만들어주면 더는 귀찮게 굴지 않을게.",
+    "NextDialogueId": "dialogue_tutorial_1_2_009",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_009",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "내가 말했던 것들을 잘 떠올리면서 만들어!",
+    "NextDialogueId": "dialogue_tutorial_1_2_010",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_010",
+    "CharacterDataId": "character_jill_01",
+    "Description": "알았다, 알았어...",
+    "NextDialogueId": "dialogue_tutorial_1_2_011",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_2_011",
+    "CharacterDataId": null,
+    "Description": "길에게 다시 슈가러쉬나 피아노 맨을 주자고. 이번엔 정확히 섞어보자.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_000",
+    "CharacterDataId": "character_jill_01",
+    "Description": "자, 충분히 오래 놀아줬지?",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_001",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "그래. 잡아둬서 미안.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_002",
+    "CharacterDataId": "character_jill_01",
+    "Description": "그럼 이제 일을 시작하자고.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_003",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "그래.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_004",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "아, 그래! 잊기 전에 하나만 더!",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Surprise",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_005",
+    "CharacterDataId": "character_jill_01",
+    "Description": "응?",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Surprise",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_006",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "만약에 레시피에 \"카모트린 추가 가능\"이라고 써져 있다면, 아예 넣지 않을 수도 잔 끝까지 채워 넣을 수도 있다는 의미야.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_007",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "카모트린은 음료의 알콜 도수를 결정하지. 맛은 변화시키지 못하지만, 알콜의 효과는 그대로 가지고 있어.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_008",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "그러니 너무 많이 넣으면, 손님이 빨리 취해버리게 될거야 잘 생각해서 넣어.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_009",
+    "CharacterDataId": "character_jill_01",
+    "Description": "이제 설명 끝났어?",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_010",
+    "CharacterDataId": "character_gillian_01",
+    "Description": "그래, 이제 막 끝났어.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_011",
+    "CharacterDataId": "character_jill_01",
+    "Description": "자 그럼 시작해볼까?",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
   }
 ]

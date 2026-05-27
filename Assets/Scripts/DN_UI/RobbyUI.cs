@@ -14,9 +14,12 @@ public class RobbyUI : DaniTechUIBase
     private void OnClick_GoToWork()
     {
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.RobbyUI);
-        DaniTechUIManager.Instance.OpenMainDialogueUI("dialogue_group_tutorial_1_1", 
+        DaniTechUIManager.Instance.OpenMainDialogueUI(
+            null,
+            "dialogue_group_tutorial_1_1",
             "dialogue_group_tutorial_1_2",
-            "dialogue_group_tutorial_1_3");
+            "dialogue_group_tutorial_1_3"
+        );
         DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MakeCocktailUI);
         Debug.Log("메인 UI로 넘어갑니다.");
     }
