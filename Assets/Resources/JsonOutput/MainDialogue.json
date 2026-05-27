@@ -16,7 +16,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_002",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -26,7 +26,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_003",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -36,7 +36,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_004",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -46,7 +46,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_005",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Dismay",
     "VoicePath": null
   },
   {
@@ -56,7 +56,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_006",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Dismay",
     "VoicePath": null
   },
   {
@@ -66,7 +66,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_007",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -76,7 +76,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_008",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -86,7 +86,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_009",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -96,7 +96,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_010",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -106,7 +106,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_011",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -116,7 +116,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_012",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Dismay",
     "VoicePath": null
   },
   {
@@ -126,7 +126,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_013",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Dismay",
     "VoicePath": null
   },
   {
@@ -136,7 +136,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_014",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -146,7 +146,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_015",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -156,7 +156,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_016",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -166,7 +166,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_017",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -176,7 +176,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_018",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -186,7 +186,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_019",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -196,7 +196,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_020",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -206,7 +206,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_021",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -216,7 +216,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_022",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -226,7 +226,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_023",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -236,7 +236,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_024",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -246,7 +246,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_025",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -256,7 +256,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_026",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Dismay",
     "VoicePath": null
   },
   {
@@ -266,7 +266,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_027",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Dismay",
     "VoicePath": null
   },
   {
@@ -276,7 +276,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_028",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -286,7 +286,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_029",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -296,7 +296,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_030",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -306,7 +306,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_031",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -316,7 +316,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_032",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -326,7 +326,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_033",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -336,7 +336,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_034",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -346,7 +346,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_035",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -356,7 +356,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_036",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -366,7 +366,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_037",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -376,7 +376,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_038",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -386,7 +386,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_039",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -396,7 +396,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_040",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -406,7 +406,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_041",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -416,7 +416,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_042",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -426,7 +426,7 @@
     "NextDialogueId": "dialogue_tutorial_1_1_043",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   },
   {
@@ -436,537 +436,7 @@
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_044",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_045",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_046",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_047",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_048",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_049",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_050",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_051",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_052",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_053",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_054",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_055",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_056",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_057",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_058",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_059",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_060",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_061",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_062",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_063",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_064",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_065",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_066",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_067",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_068",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_069",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_070",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_071",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_072",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_073",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_074",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_075",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_076",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_077",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_078",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_079",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_080",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_081",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_082",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_083",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_084",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_085",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_086",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_087",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_088",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_089",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_090",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_091",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_092",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_093",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_094",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_095",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_tutorial_1_1_096",
-    "CharacterDataId": null,
-    "Description": null,
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
     "VoicePath": null
   }
 ]

@@ -40,6 +40,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a418aa6bb664ef48b65586a7395a5b2
+    m_Address: Texture2D/Character_Gillian_Basic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 206a582733ec1344282b6a5c1927bb42
     m_Address: Icon/Cocktail_Beer_1
     m_ReadOnly: 0
@@ -70,6 +75,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b673fe59b95cc1458c6dcfd2f1a33ca
+    m_Address: Texture2D/Character_Gillian_Surorise
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3c2bd09e8b6c59141b50f1f2c4e6f91a
     m_Address: 'Icon/Cocktail_PianoWoman_1 '
     m_ReadOnly: 0
@@ -82,6 +92,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 40b0e3b1d5ca86b4a9a5a5078a60ad96
     m_Address: Icon/Cocktail_SugarRush_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 42ef1a7c42340cd4289172a27d44f489
+    m_Address: Texture2D/Character_Gillian_Smile
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -102,6 +117,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 667b719d1d688874a8f6a8ad59d98106
     m_Address: Icon/Icon_Item_Box_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 67370a368066d9947a9a7078307a3df6
+    m_Address: Texture2D/Character_Gillian_Angry
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -162,6 +182,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb21c38c0d8412d4b9964ef0db1180d3
     m_Address: 'Icon/Cocktail_FrothyWater_1 '
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c1faa49dd8430224dbfd983351d07436
+    m_Address: Texture2D/Character_Gillian_Dismay
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
