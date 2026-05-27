@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class MainDialogueUI : DaniTechUIBase
 {
+    [SerializeField] private GameObject Layout_CharacterName;
     [SerializeField] private Text Text_MainDialogue;
+    [SerializeField] private Text Text_Name;
     [SerializeField] private DaniTechUIButton Button_Next;
     [SerializeField] private RawImage RawImage_Character;
 
@@ -77,6 +79,7 @@ public class MainDialogueUI : DaniTechUIBase
         }
 
         Text_MainDialogue.text = dialogueData.Description;
+        SetCharacterName(dialogueData.CharacterDataId);
 
         if (string.IsNullOrEmpty(dialogueData.TexturePath) == false)
         {
@@ -87,7 +90,7 @@ public class MainDialogueUI : DaniTechUIBase
         else
         {
             RawImage_Character.gameObject.SetActive(false);
-        }    
+        }
     }
 
     private void OnClick_Next()
@@ -100,4 +103,38 @@ public class MainDialogueUI : DaniTechUIBase
         Button_Next.UnBindOnClickButtonEvent(OnClick_Next);
     }
 
+    private void SetCharacterName(string characterDataId)
+    {
+        bool isActive = (string.IsNullOrEmpty(characterDataId) == false);
+        Layout_CharacterName.SetActive(isActive);
+
+        if (isActive)
+        {
+            var characterData = DaniTechGameDataManager.Instance.GetCharacterData(characterDataId);
+            if (characterData != null)
+            {
+                string displayName = characterData.Name;
+                if (displayName.Length <= 2)
+                {
+                    Text_Name.text = $"{displayName}:\t";
+                }
+                else
+                {
+                    Text_Name.text = $"{displayName}";
+                }
+
+                if (string.IsNullOrEmpty(characterData.NameColor) == false)
+                {
+                    if (ColorUtility.TryParseHtmlString(characterData.NameColor, out Color parsedColor))
+                    {
+                        Text_Name.color = parsedColor;
+                    }
+                }
+                else
+                {
+                    Text_Name.color = Color.white;
+                }
+            }
+        }
+    }
 }

@@ -22,6 +22,7 @@ public class DNCharacterData : GameDataBase
     public string SkillList;
     public string UseWeaponId;
     public string BasicCostumeId;
+    public string NameColor;
 }
 
 [System.Serializable]
