@@ -146,9 +146,7 @@ public static class DaniTechUIManagerExtension
         }
     }
 
-    public static void OpenMainDialogueUI(this DaniTechUIManager uiManager,
-    System.Action onEndCallback = null,
-    params string[] dialogueGroupIds)
+    public static void OpenMainDialogueUI(this DaniTechUIManager uiManager, params string[] dialogueGroupIds)
     {
         var uiBase = uiManager.OpenContentUI(DaniTechUIType.MainDialogueUI);
         if (uiBase == null)
@@ -158,7 +156,7 @@ public static class DaniTechUIManagerExtension
         }
         if (uiBase is MainDialogueUI mainDialogueUI)
         {
-            mainDialogueUI.StartDialogue(onEndCallback, dialogueGroupIds);
+            mainDialogueUI.StartDialogue(dialogueGroupIds);
         }
     }
 }

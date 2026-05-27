@@ -1,4 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +17,7 @@ public class MainDialogueUI : DaniTechUIBase
     private string _currentDialogueGroupId = string.Empty;
 
     //요건 AI한테..
-    private System.Action _onDialogueEndCallback;
+    public event Action OnDialogueEnd;
 
     private void OnEnable()
     {
@@ -27,8 +28,8 @@ public class MainDialogueUI : DaniTechUIBase
     {
         if (_dialogueGroupQueue.Count == 0)
         {
-            _onDialogueEndCallback?.Invoke();
-            _onDialogueEndCallback = null;
+            OnDialogueEnd?.Invoke();
+            OnDialogueEnd = null;
             return;
         }
 
@@ -37,9 +38,8 @@ public class MainDialogueUI : DaniTechUIBase
         ShowNextDialogue();
     }
 
-    public void StartDialogue(System.Action onEndCallback = null, params string[] dialogueGroupIds)
+    public void StartDialogue(params string[] dialogueGroupIds)
     {
-        _onDialogueEndCallback = onEndCallback;
         _dialogueGroupQueue.Clear();
         foreach (var groupId in dialogueGroupIds)
         {
@@ -98,6 +98,7 @@ public class MainDialogueUI : DaniTechUIBase
             RawImage_Character.gameObject.SetActive(false);
         }
     }
+
 
     private void OnClick_Next()
     {

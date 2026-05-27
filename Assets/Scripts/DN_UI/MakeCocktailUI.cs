@@ -248,7 +248,7 @@ public class MakeCocktailUI : DaniTechUIBase
         string recipeId = _currentMatchedRecipe.Id;
         Debug.Log($"recipeId: {recipeId}");
 
-        bool isSuccess = (recipeId == "Cocktail_SugarRush_1" || recipeId == "Cocktail_PianoMan_1");
+        bool isSuccess = (recipeId == "Cocktail_SugarRush_2" || recipeId == "Cocktail_PianoMan_2");
 
         if (isSuccess)
         {
@@ -282,7 +282,7 @@ public class MakeCocktailUI : DaniTechUIBase
         var dialogueUI = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MainDialogueUI) as MainDialogueUI;
         if (dialogueUI != null)
         {
-            dialogueUI.StartDialogue(OnFailDialogueEnd, "dialogue_group_tutorial_1_3_fail");
+            dialogueUI.StartDialogue("dialogue_group_tutorial_1_3_fail");
         }
     }
 

@@ -76,7 +76,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3b673fe59b95cc1458c6dcfd2f1a33ca
-    m_Address: Texture2D/Character_Gillian_Surorise
+    m_Address: Texture2D/Character_Gillian_Surprise
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 53eaccee6c9bf0a4fb12ee9d39dc8695
-    m_Address: 'Icon/Cocktail_PianoMan_1 '
+    m_Address: Icon/Cocktail_PianoMan_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
