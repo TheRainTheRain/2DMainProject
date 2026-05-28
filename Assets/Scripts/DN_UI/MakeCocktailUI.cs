@@ -22,6 +22,36 @@ public class MakeCocktailUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Submit;
     [SerializeField] private DaniTechUIButton Button_Stop;
 
+    [Header("쉐이커 게이지 슬롯")]
+    [SerializeField] private Transform Transform_SlotGroupBottom;
+    [SerializeField] private Transform Transform_SlotGroupTop;
+
+    [Header("재료 슬롯")]
+    [SerializeField] private Transform Transform_SlotAdelhyde;
+    [SerializeField] private Transform Transform_SlotBronsonExt;
+    [SerializeField] private Transform Transform_SlotPwdDelta;
+    [SerializeField] private Transform Transform_SlotFlanergide;
+    [SerializeField] private Transform Transform_SlotKarmotrine;
+
+    [Header("슬롯 스프라이트")]
+    [SerializeField] private Sprite Sprite_SlotEmpty;
+    [SerializeField] private Sprite Sprite_SlotAdlehyde;
+    [SerializeField] private Sprite Sprite_BronsonExt;
+    [SerializeField] private Sprite Sprite_PwdDelta;
+    [SerializeField] private Sprite Sprite_Flanergide;
+    [SerializeField] private Sprite Sprite_Karmotrine;
+
+    [Header("쉐이커 관련")]
+    [SerializeField] private ShakerAnim ShakerAnim;
+    private Sprite _defaultShakerSprite;
+
+    private Image[] _slot_GroupBottom;
+    private Image[] _slot_GroupTop;
+    private Image[] _slot_Adelhyde;
+    private Image[] _slot_BronsonExt;
+    private Image[] _slot_PwdDelta;
+    private Image[] _slot_Flanergide;
+    private Image[] _slot_Karmotrine;
 
     // 재료 수량 카운트
     private int _countAdelhyde = 0;
@@ -33,15 +63,13 @@ public class MakeCocktailUI : DaniTechUIBase
     // 얼음과 숙성 체크
     private bool _isIce = false;
     private bool _isAge = false;
-    private Sprite _defaultShakerSprite;
-
-    [SerializeField] private ShakerAnim ShakerAnim;
     private bool _isShaking = false;
 
     private void Awake()
     {
         _defaultShakerSprite = Image_Shaker.sprite;
         Image_Result.gameObject.SetActive(false);
+        InitSlots();
         ButtonBinding();
     }
 
@@ -66,6 +94,7 @@ public class MakeCocktailUI : DaniTechUIBase
         if (_countAdelhyde < 10)
         {
             _countAdelhyde++;
+            RefreshSlots();
             Debug.Log($"아델하이드를 추가합니다 현재 수량 : {_countAdelhyde}개");
         }
     }
@@ -75,6 +104,7 @@ public class MakeCocktailUI : DaniTechUIBase
         if (_countBronsonExt < 10)
         {
             _countBronsonExt++;
+            RefreshSlots();
             Debug.Log($"브론순 추출액을 추가합니다 현재 수량 : {_countBronsonExt}개");
         }
     }
@@ -84,6 +114,7 @@ public class MakeCocktailUI : DaniTechUIBase
         if (_countPwdDelta < 10)
         {
             _countPwdDelta++;
+            RefreshSlots();
             Debug.Log($"델타가루를 추가합니다 현재 수량 : {_countPwdDelta}개");
         }
     }
@@ -93,6 +124,7 @@ public class MakeCocktailUI : DaniTechUIBase
         if (_countFlanergide < 10)
         {
             _countFlanergide++;
+            RefreshSlots();
             Debug.Log($"플래너자이드를 추가합니다 현재 수량 : {_countFlanergide}개");
         }
     }
@@ -102,6 +134,7 @@ public class MakeCocktailUI : DaniTechUIBase
         if (_countKarmotrine < 10)
         {
             _countKarmotrine++;
+            RefreshSlots();
             Debug.Log($"카모트린를 추가합니다 현재 수량 : {_countKarmotrine}개");
         }
     }
@@ -117,6 +150,10 @@ public class MakeCocktailUI : DaniTechUIBase
         _isAge = !_isAge;
         Debug.Log("숙성 상태 변경");
     }
+
+    private CocktailRecipeData _currentMatchedRecipe;
+
+    // 요 부분은 AI가 많이 도와줬습니다,,, ======================= 기능 관련 메서드들 입니다 =====================
 
     private void OnClick_Retry()
     {
@@ -134,6 +171,7 @@ public class MakeCocktailUI : DaniTechUIBase
         _countKarmotrine = 0;
         _isIce = false;
         _isAge = false;
+        RefreshSlots();
 
         Button_Shake?.gameObject.SetActive(true);
         Button_Shake?.UnBindOnClickButtonEvent(OnClick_Shake);
@@ -160,10 +198,6 @@ public class MakeCocktailUI : DaniTechUIBase
         Button_Submit.gameObject.SetActive(false);
     }
 
-
-    private CocktailRecipeData _currentMatchedRecipe;
-
-    // 요 부분은 AI가 많이 도와줬습니다,,,
     private void OnClick_Stop()
     {
         Debug.Log("OnClick_Stop 호출됨!");
@@ -282,7 +316,68 @@ public class MakeCocktailUI : DaniTechUIBase
         var dialogueUI = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MainDialogueUI) as MainDialogueUI;
         if (dialogueUI != null)
         {
-            dialogueUI.StartDialogue("dialogue_group_tutorial_1_3_fail");
+            dialogueUI.StartDialogue(null, "dialogue_group_tutorial_1_3_fail");
+        }
+    }
+
+    private void UpdateSlot(Image[] slot, int count, Sprite sprite)
+    {
+        for (int i = 0; i < slot.Length; i++)
+        {
+            if (i < count)
+            {
+                slot[i].sprite = sprite;
+            }
+            else
+            {
+                slot[i].sprite = Sprite_SlotEmpty;
+            }
+        }
+    }
+
+    // ref 는 원본을 바꿔버린다.
+    private void AddCount(ref int count)
+    {
+        if (count < 10)
+        {
+            count++;
+            RefreshSlots();
+        }
+    }
+
+    private void RefreshSlots()
+    {
+        UpdateSlot(_slot_Adelhyde, _countAdelhyde, Sprite_SlotAdlehyde);
+        UpdateSlot(_slot_BronsonExt, _countBronsonExt, Sprite_BronsonExt);
+        UpdateSlot(_slot_PwdDelta, _countPwdDelta, Sprite_PwdDelta);
+        UpdateSlot(_slot_Flanergide, _countFlanergide, Sprite_Flanergide);
+        UpdateSlot(_slot_Karmotrine, _countKarmotrine, Sprite_Karmotrine);
+        UpdateGaugeSlots();
+    }
+
+    private void InitSlots()
+    {
+        _slot_Adelhyde = Transform_SlotAdelhyde.GetComponentsInChildren<Image>();
+        _slot_BronsonExt = Transform_SlotBronsonExt.GetComponentsInChildren<Image>();
+        _slot_PwdDelta = Transform_SlotPwdDelta.GetComponentsInChildren<Image>();
+        _slot_Flanergide = Transform_SlotFlanergide.GetComponentsInChildren<Image>();
+        _slot_Karmotrine = Transform_SlotKarmotrine.GetComponentsInChildren<Image>();
+        _slot_GroupBottom = Transform_SlotGroupBottom.GetComponentsInChildren<Image>();
+        _slot_GroupTop = Transform_SlotGroupTop.GetComponentsInChildren<Image>();
+    }
+
+    private void UpdateGaugeSlots()
+    {
+        int total = _countAdelhyde + _countBronsonExt + _countPwdDelta + _countFlanergide + _countKarmotrine;
+
+        for (int i = 0; i < _slot_GroupBottom.Length; i++)
+        {
+            _slot_GroupBottom[i].gameObject.SetActive(i < total);
+        }
+
+        for (int i = 0; i < _slot_GroupTop.Length; i++)
+        {
+            _slot_GroupTop[i].gameObject.SetActive(i < (total - 10));
         }
     }
 
