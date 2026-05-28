@@ -312,27 +312,21 @@ public class MakeCocktailUI : DaniTechUIBase
 
     private void OnSubmitSuccess()
     {
-        Debug.Log("OnSubmitSuccess 호출됨!");
         OnClick_Retry();
-
         var dialogueUI = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MainDialogueUI) as MainDialogueUI;
-
-        Debug.Log($"dialogueUI null 여부: {dialogueUI == null}");
-
         if (dialogueUI != null)
         {
-            dialogueUI.StartDialogue(null, "dialogue_group_tutorial_1_3_success");
+            dialogueUI.StartDialogue(null, new string[] { "dialogue_group_tutorial_1_3_success" });
         }
     }
 
     private void OnSubmitFail()
     {
         OnClick_Retry();
-
         var dialogueUI = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MainDialogueUI) as MainDialogueUI;
         if (dialogueUI != null)
         {
-            dialogueUI.StartDialogue(null, "dialogue_group_tutorial_1_3_fail");
+            dialogueUI.StartDialogue(null, new string[] { "dialogue_group_tutorial_1_3_fail" });
         }
     }
 

@@ -171,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RobbyUI
   Button_GoToWork: {fileID: 5681874605489243292}
   Button_Exit: {fileID: 8322010814853948280}
+  Button_GoingRobby: {fileID: 3291353168663653557}
 --- !u!1 &467129098112617690
 GameObject:
   m_ObjectHideFlags: 0

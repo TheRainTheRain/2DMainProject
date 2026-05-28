@@ -18,6 +18,7 @@ public class MainDialogueUI : DaniTechUIBase
 
     //요건 AI한테..
     public event Action OnDialogueEnd;
+    private Action _onDialogueEndCallback;
 
     private void OnEnable()
     {
@@ -38,8 +39,9 @@ public class MainDialogueUI : DaniTechUIBase
         ShowNextDialogue();
     }
 
-    public void StartDialogue(params string[] dialogueGroupIds)
+    public void StartDialogue(Action onEndCallback, string[] dialogueGroupIds)
     {
+        _onDialogueEndCallback = onEndCallback;
         _dialogueGroupQueue.Clear();
         foreach (var groupId in dialogueGroupIds)
         {

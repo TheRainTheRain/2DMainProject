@@ -126,8 +126,12 @@ public class DaniTechUIManager : MonoBehaviour
         CloseUI(DaniTechUIRootType.PopupUI, uiType);
     }
 
-    internal void OpenMainDialogueUI(string v1, string v2, string v3)
+    public void OpenMainDialogueUI(params string[] dialogueGroupIds)
     {
-        throw new NotImplementedException();
+        var uiBase = OpenContentUI(DaniTechUIType.MainDialogueUI);
+        if (uiBase is MainDialogueUI mainDialogueUI)
+        {
+            mainDialogueUI.StartDialogue(null, dialogueGroupIds);
+        }
     }
 }
