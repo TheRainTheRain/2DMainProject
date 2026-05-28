@@ -21,7 +21,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0bd351b30ee036845b369ec9ffa0145f
-    m_Address: 'Icon/Cocktail_CreviceSpike_1 '
+    m_Address: Icon/Cocktail_CreviceSpike_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 179fb0af4b271e741a7c5c7ed4497cb7
-    m_Address: 'Icon/Cocktail_FringeWeaver_1 '
+    m_Address: Icon/Cocktail_FringeWeaver_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -56,17 +56,17 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2bbf9271ba1e27441b5b314d7405c838
-    m_Address: 'Icon/Cocktail_Brandtini_1 '
+    m_Address: Icon/Cocktail_Brandtini_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 300576f1583c2ac4f96be0661cfdb5c5
-    m_Address: 'Icon/Cocktail_Suplex_1 '
+    m_Address: Icon/Cocktail_Suplex_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 321fb9e87398f4d41b413ee0db5c5469
-    m_Address: 'Icon/Cocktail_BleedingJane_1 '
+    m_Address: Icon/Cocktail_BleedingJane_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -81,12 +81,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3c2bd09e8b6c59141b50f1f2c4e6f91a
-    m_Address: 'Icon/Cocktail_PianoWoman_1 '
+    m_Address: Icon/Cocktail_PianoWoman_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3ccee851126b0d0478b0b043504d0ea3
-    m_Address: 'Icon/Cocktail_ZenStar_1 '
+    m_Address: Icon/Cocktail_ZenStar_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 49fb0ac197893d947b62ef8c0846a92b
-    m_Address: 'Icon/Cocktail_SunshineCloud_1 '
+    m_Address: Icon/Cocktail_SunshineCloud_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6db979e8fc8b1f54b810aec2d498872a
-    m_Address: 'Icon/Cocktail_Piledriver_1 '
+    m_Address: Icon/Cocktail_Piledriver_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -141,17 +141,17 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 87d4855e32ccf284f95a9292449b395c
-    m_Address: 'Icon/Cocktail_GrlzzlyTemple_1 '
+    m_Address: Icon/Cocktail_GrlzzlyTemple_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 88b0217cdb0635e4b8f2a111542db679
-    m_Address: 'Icon/Cocktail_SparkleStar_1 '
+    m_Address: Icon/Cocktail_SparkleStar_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9530dd4e052da5f4697c3c8365567b4d
-    m_Address: 'Icon/Cocktail_GutPunch_1 '
+    m_Address: Icon/Cocktail_GutPunch_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -161,17 +161,17 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a9118cd559bf81e41a7aaef2c1e070b1
-    m_Address: 'Icon/Cocktail_BloomLight_1 '
+    m_Address: Icon/Cocktail_BloomLight_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: aa4b8f1bbad011b43803a67c502c2027
-    m_Address: 'Icon/Cocktail_MoonBlast_1 '
+    m_Address: Icon/Cocktail_MoonBlast_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b0d2ad1e9b653e34887d4c448c43041b
-    m_Address: 'Icon/Cocktail_Mercuryblast_1 '
+    m_Address: Icon/Cocktail_Mercuryblast_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb21c38c0d8412d4b9964ef0db1180d3
-    m_Address: 'Icon/Cocktail_FrothyWater_1 '
+    m_Address: Icon/Cocktail_FrothyWater_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d1cfe9fdfccfa2946b32ff770b9f4e87
-    m_Address: 'Icon/Cocktail_CobaltVelvet_1 '
+    m_Address: Icon/Cocktail_CobaltVelvet_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -221,12 +221,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e7d8b9b9ab3935348a587582acd8475b
-    m_Address: 'Icon/Cocktail_Marsblast_1 '
+    m_Address: Icon/Cocktail_Marsblast_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ea741fadeb0393844b44e849ddd975f0
-    m_Address: 'Icon/Cocktail_FluffyDream_1 '
+    m_Address: Icon/Cocktail_FluffyDream_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

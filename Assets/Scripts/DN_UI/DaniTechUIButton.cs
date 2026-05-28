@@ -82,4 +82,10 @@ public class DaniTechUIButton : MonoBehaviour
             Image_Select.gameObject.SetActive(!currentActive);
         }
     }
+
+    public void ChangeButtonSprite(Sprite sprite)
+    {
+        if (Image_Base == null) return;
+        Image_Base.sprite = sprite;
+    }
 }

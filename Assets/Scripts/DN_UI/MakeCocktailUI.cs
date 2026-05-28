@@ -41,6 +41,12 @@ public class MakeCocktailUI : DaniTechUIBase
     [SerializeField] private Sprite Sprite_Flanergide;
     [SerializeField] private Sprite Sprite_Karmotrine;
 
+    [Header("얼음/숙성 스프라이트")]
+    [SerializeField] private Sprite Sprite_Ice_On;
+    [SerializeField] private Sprite Sprite_Ice_Off;
+    [SerializeField] private Sprite Sprite_Age_On;
+    [SerializeField] private Sprite Sprite_Age_Off;
+
     [Header("쉐이커 관련")]
     [SerializeField] private ShakerAnim ShakerAnim;
     private Sprite _defaultShakerSprite;
@@ -65,12 +71,13 @@ public class MakeCocktailUI : DaniTechUIBase
     private bool _isAge = false;
     private bool _isShaking = false;
 
-    private void Awake()
+    private void OnEnable()
     {
         _defaultShakerSprite = Image_Shaker.sprite;
         Image_Result.gameObject.SetActive(false);
         InitSlots();
         ButtonBinding();
+        RefreshSlots();
     }
 
     private void ButtonBinding()
@@ -142,12 +149,14 @@ public class MakeCocktailUI : DaniTechUIBase
     private void OnClick_Ice()
     {
         _isIce = !_isIce;
+        Button_Ice.ChangeButtonSprite(_isIce ? Sprite_Ice_On : Sprite_Ice_Off);
         Debug.Log("얼음 상태 변경");
     }
 
     private void OnClick_Age()
     {
         _isAge = !_isAge;
+        Button_Age.ChangeButtonSprite(_isAge ? Sprite_Age_On : Sprite_Age_Off);
         Debug.Log("숙성 상태 변경");
     }
 
@@ -171,6 +180,8 @@ public class MakeCocktailUI : DaniTechUIBase
         _countKarmotrine = 0;
         _isIce = false;
         _isAge = false;
+        Button_Ice.ChangeButtonSprite(Sprite_Ice_Off);
+        Button_Age.ChangeButtonSprite(Sprite_Age_Off);
         RefreshSlots();
 
         Button_Shake?.gameObject.SetActive(true);
@@ -228,11 +239,16 @@ public class MakeCocktailUI : DaniTechUIBase
         foreach (var kv in dataManager.CocktailRecipeDataList)
         {
             var recipe = kv.Value;
+
+            bool isKarmotrineMatch = recipe.Optional
+            ? true
+            : recipe.Karmotrine == _countKarmotrine;
+
             if (recipe.Adelhyde == _countAdelhyde &&
                 recipe.BronsonExt == _countBronsonExt &&
                 recipe.PwdDelta == _countPwdDelta &&
                 recipe.Flanergide == _countFlanergide &&
-                recipe.Karmotrine == _countKarmotrine &&
+                isKarmotrineMatch &&
                 recipe.Ice == _isIce &&
                 recipe.Age == _isAge)
             {
