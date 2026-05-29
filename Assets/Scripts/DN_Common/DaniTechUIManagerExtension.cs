@@ -29,7 +29,8 @@ public enum DaniTechUIType
     CocktailDictionaryPopupUI,
     MakeCocktailUI,
     MainDialogueUI,
-    PhoneRobbyPopupUI
+    PhoneRobbyPopupUI,
+    AugmenredEyePopupUI
 }
 
 public static class DaniTechUIManagerExtension

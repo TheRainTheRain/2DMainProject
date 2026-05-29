@@ -401,12 +401,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189731001450389902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9109134785059904326}
+  m_Father: {fileID: 3515430560134518251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -696,12 +696,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628641853300989211}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9109134785059904326}
+  m_Father: {fileID: 3515430560134518251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1028,12 +1028,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2993469527407370855}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9109134785059904326}
+  m_Father: {fileID: 3515430560134518251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1205,9 +1205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7e836d106d70545b336d870c1875d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhoneRobbyPopupUI
-  Button_AugmentedEye: {fileID: 0}
-  Button_MusicCgange: {fileID: 0}
-  Button_Save: {fileID: 0}
+  Button_AugmentedEye: {fileID: 2755391874915044406}
+  Button_MusicCgange: {fileID: 5890906642655838561}
+  Button_Save: {fileID: 1722510228439092270}
 --- !u!1 &3701694201641028598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1862,7 +1862,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6901188605044181816}
+  - {fileID: 612281968644798579}
+  - {fileID: 5548570584471764633}
   m_Father: {fileID: 9109134785059904326}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2271,9 +2274,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6901188605044181816}
-  - {fileID: 612281968644798579}
-  - {fileID: 5548570584471764633}
   - {fileID: 3515430560134518251}
   m_Father: {fileID: 1056809094580349369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

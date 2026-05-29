@@ -15,7 +15,8 @@ public class PhoneRobbyPopupUI : DaniTechUIBase
 
     private void OnClickAugmenredEye()
     {
-
+        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyePopupUI);
+        Debug.Log("뉴스 팝업이 열립니다.");
     }
 
     private void OnClickMusicCgange()
