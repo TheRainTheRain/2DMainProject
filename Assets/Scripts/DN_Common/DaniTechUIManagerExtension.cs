@@ -30,7 +30,8 @@ public enum DaniTechUIType
     MakeCocktailUI,
     MainDialogueUI,
     PhoneRobbyPopupUI,
-    AugmenredEyePopupUI
+    AugmenredEyePopupUI,
+    AugmenredEyeTextPopupUI
 }
 
 public static class DaniTechUIManagerExtension
