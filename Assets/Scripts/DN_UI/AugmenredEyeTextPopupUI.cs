@@ -64,14 +64,4 @@ public class AugmenredEyeTextPopupUI : DaniTechUIBase
         slotComponent.InitSlot(dataId);
         _slotList.Add(dataId, slotComponent);
     }
-
-
-
-
-
-
-
-
-
-
 }

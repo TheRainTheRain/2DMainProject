@@ -82,7 +82,7 @@
   {
     "Id": "dialogue_talk_1_002",
     "CharacterDataId": null,
-    "Description": "질: 알마 생각은 어ᄄᅠᆯ지 궁금한걸...",
+    "Description": "질: 알마 생각은 어떨지 궁금한걸...",
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
