@@ -673,6 +673,16 @@
     "Id": "dialogue_tutorial_1_3_011",
     "CharacterDataId": "character_jill_01",
     "Description": "자 그럼 시작해볼까?",
+    "NextDialogueId": "dialogue_tutorial_1_3_012",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_tutorial_1_3_012",
+    "CharacterDataId": "character_jill_01",
+    "Description": "술을 섞고 삶을 바꿔줄 시간이군.",
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,

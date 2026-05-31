@@ -1,54 +1,8 @@
 [
   {
-    "Id": "dialogue_mainstream_1_1_100",
+    "Id": "dialogue_title_1_1_000",
     "CharacterDataId": null,
-    "Description": "새로운 세계에 접속 하셨습니다…<np>오랜시간 기다리셨는데..<np>제가 많이 늦었군요...",
-    "NextDialogueId": "dialogue_mainstream_1_1_200",
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": "Texture2D/Texture2D_Loading_1",
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_mainstream_1_1_200",
-    "CharacterDataId": null,
-    "Description": "용사님이시어..고생하셨군요",
-    "NextDialogueId": "dialogue_mainstream_1_1_300",
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_mainstream_1_1_300",
-    "CharacterDataId": null,
-    "Description": "다만 아직 야근이 남아 있습니다. 좀 더 고생해주세요.",
-    "NextDialogueId": null,
-    "SelectionNameList": null,
-    "SelectionDialogueIdList": null,
-    "TexturePath": null,
-    "VoicePath": "Sound/Voice_Pug_1_I_WantToEatPizza"
-  },
-  {
-    "Id": "dialogue_group_mainstream_1_2_100",
-    "CharacterDataId": null,
-    "Description": "두둥..지금.. 배가 고픕니다!",
-    "NextDialogueId": null,
-    "SelectionNameList": [
-      "아무 대답하지 않는다",
-      "대답한다"
-    ],
-    "SelectionDialogueIdList": [
-      "dialogue_mainstream_1_2_200",
-      "dialogue_mainstream_1_2_300"
-    ],
-    "TexturePath": null,
-    "VoicePath": null
-  },
-  {
-    "Id": "dialogue_group_mainstream_1_2_200",
-    "CharacterDataId": null,
-    "Description": "커피인가..",
+    "Description": "집단 이주가 계속되고 있습니다....",
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
@@ -56,19 +10,89 @@
     "VoicePath": null
   },
   {
-    "Id": "dialogue_group_mainstream_1_2_300",
+    "Id": "dialogue_title_1_1_001",
     "CharacterDataId": null,
-    "Description": "피자인가..",
+    "Description": "새롭게 나타난 위협 원더랜더즈",
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": null,
-    "VoicePath": "Sound/Voice_Pug_1_I_WantToEatPizza"
+    "VoicePath": null
   },
   {
-    "Id": "dialogue_group_mainstream_1_2_400",
+    "Id": "dialogue_title_1_1_002",
     "CharacterDataId": null,
-    "Description": "일단 밥을 먹지 않고 조금 더 진행해본다!",
+    "Description": "하이힐을 신은 사이보그 내년 복귀.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_detail1_1_000",
+    "CharacterDataId": null,
+    "Description": "퀸시의 새로운 경제 조정안 발표에 따라 집단 이주가 계속되고 있다.\n\n\n킴벌리 라 벨레트 기자\n\n\n세계에서 가장 높은 수준의 인플레이션과 기본적인 식료품 부족 그리고 걷잡을 수 없는 폭력 범죄율 때문에 글리치 시티의 시민들은 더 나은 삶을 찾아 다른 나라로 떠나고 있습니다.\n\n반면, 퀸시는 이 상황을 나쁘게 받아들이고 있습니다.\n\n총리는 본지와의 인터뷰에서 이렇게 말했습니다. \"이 도시에서 의무교욱을 받고 대학을 나왔습니다, 그런데 그 기술들을 다른 곳에서 활용하고 있죠, 이건 모욕입니다.\"\n\n모두 새로운 경제 조정안이 발표된 이후에 일어나고 있는 일입니다, 많은 전문가들이 현 상황에서는 큰 의미 없는 행동이 될 거라고 지목하였습니다.\n\n퀸시는 \"그 작자들이 뭘 안다고 그래\" 라고 결론 내렸습니다.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_detail1_1_001",
+    "CharacterDataId": null,
+    "Description": "\"원더랜더즈\" 가 당신의 보안체계에 새로운 위협으로 나타났다\n\n킴벌리 라 발레트 기자\n\n그 어ᄄᅠᆫ 복잡한 보안체제든 그것을 뚫는 것에 세상에서 가장 뛰어난이가 앨리스 래빗이라고 생각하셨다면, 이 새로 나타난 집단을 보고 생각을 바꾸시게 될겁니다. 이들은 아직까지 앨리스 래빗만큼 영향력 있는 모습을 보여주지 않았지만, 최근 퀸시 총리와 관련된 문제에 대해 굉장히 큰 목표를 가지고 있는 것처럼 보입니다.\n\n\"우리는 이미 퀸시 이메일 네트워크를 장악했고, 1월달에 데이터베이스를 날려버릴 것이다\" 라고 이 단체가 생방송 중 발표했습니다.\n\n\"얄팍한 위협이다.\"\n\n퀸시 총리는 질문을 받자 \"아무것도 숨기고 있지 않으니\" 이메일 기록이 유출되던 djWJejs 이 그룹의 발표가 별 위협이 되지 않는다고 말했습니다.\n\n\"모두들 내가 저번 달에 어ᄄᅠᆫ TV를 샀는지 정도나 알게 될 겁니다.\"\n\n",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_detail1_1_002",
+    "CharacterDataId": null,
+    "Description": "하이힐을 신은 사이보그가 내년 슈퍼 실버 선더 돔으로 돌아옵니다.\n\n라나스미시 기자\n\n인기 공연 하이힐을 신은 사이보그가 다가오는 3월 선더돔으로 돌아옵니다. 1월부터 티켓 판매에 들어간다고 합니다.\n\n하이힐을 신은 사이보그는 하이힐을 신은 사이보그가 테러리스트들과 싸우는 웅장한 무대 공연입니다.\n\n 퀸든 헤이터 감독은 본지와의 인터뷰 중에 하이힐을 신은 사이보그가 가진 특별한 매력에 관해 설명했습니다.\n\n\"당연히 좋아하게 되는 거 아닌가? 사이보그라고, 하이힐을 신었고, 다른 건 상관없지. 말 그대로 여태까지 아무도 본적이 없는 조합이지, 내가 만들어낸 틈새시장인거라고...\"\n\n몇주 뒤 이곳 어그멘티드 아이에서 단독 인터뷰 전문이 공개됩니다. 꼭 확인하세요.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_talk_1_000",
+    "CharacterDataId": null,
+    "Description": "\"포어\": 그래서, 그 편지는 누구한테 온거야?\n\n질: 아무도 아냐.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_talk_1_001",
+    "CharacterDataId": null,
+    "Description": "\"포어\": 떠날 거야?\n\n질: 널 두고 떠나진 않아.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_talk_1_002",
+    "CharacterDataId": null,
+    "Description": "질: 알마 생각은 어ᄄᅠᆯ지 궁금한걸...",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_talk_1_003",
+    "CharacterDataId": null,
+    "Description": "\"포어\": 저 사람 행동 좀 이상한데.\n\n질: 아마 이 사람은 자연법칙이고 뭐고 상관없나보지.",
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
