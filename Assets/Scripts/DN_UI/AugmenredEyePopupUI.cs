@@ -74,12 +74,11 @@ public class AugmenredEyePopupUI : DaniTechUIBase
 
     private void OnClick_Back()
     {
-        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyePopupUI);
     }
 
     private void OnClick_Home()
     {
-        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyePopupUI);
     }
 }
