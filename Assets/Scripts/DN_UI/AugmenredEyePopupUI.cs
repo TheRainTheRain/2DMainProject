@@ -22,69 +22,64 @@ public class AugmenredEyePopupUI : DaniTechUIBase
         Button_News1.BindOnClickButtonEvent(OnClick_News1);
         Button_News2.BindOnClickButtonEvent(OnClick_News2);
         Button_News3.BindOnClickButtonEvent(OnClick_News3);
+        CreateButton();
+        SetDialogue("dialogue_talk_1_000");
     }
 
-    private void OnClick_Back()
+    private void CreateButton()
     {
-        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyePopupUI);
+        var dataList = DaniTechGameDataManager.Instance.RobbyDialogueDataList;
+        foreach (var dataKv in dataList)
+        {
+            var data = dataKv.Value;
+            if (data == null) continue;
+            if (data.Id == "dialogue_title_1_1_000") Text_News1.text = data.Description;
+            else if (data.Id == "dialogue_title_1_1_001") Text_News2.text = data.Description;
+            else if (data.Id == "dialogue_title_1_1_002") Text_News3.text = data.Description;
+        }
     }
 
-    private void OnClick_Home()
-    {   
-        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyePopupUI);
+    private void SetDialogue(string dataId)
+    {
+        var dataList = DaniTechGameDataManager.Instance.RobbyDialogueDataList;
+        foreach (var dataKv in dataList)
+        {
+            var data = dataKv.Value;
+            if (data == null) continue;
+            if (data.Id == dataId)
+            {
+                Text_Dialogue.text = data.Description;
+                break;
+            }
+        }
     }
 
     private void OnClick_News1()
     {
         DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
-        Debug.Log("뉴스 팝업 1이 열립니다.");
-
-        var dataList = DaniTechGameDataManager.Instance.RobbyDialogueDataList;
-        foreach (var dataKv in dataList)
-        {
-            var data = dataKv.Value;
-            if (data == null) continue;
-            if (data.Id == "dialogue_talk_1_000")
-            {
-                Text_News1.text = data.Description;
-                break;
-            }
-        }
+        SetDialogue("dialogue_talk_1_001");
     }
 
     private void OnClick_News2()
     {
         DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
-        Debug.Log("뉴스 팝업 2가 열립니다.");
-
-        var dataList = DaniTechGameDataManager.Instance.RobbyDialogueDataList;
-        foreach (var dataKv in dataList)
-        {
-            var data = dataKv.Value;
-            if (data == null) continue;
-            if (data.Id == "dialogue_talk_1_001")
-            {
-                Text_News2.text = data.Description;
-                break;
-            }
-        }
+        SetDialogue("dialogue_talk_1_002");
     }
 
     private void OnClick_News3()
     {
         DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
-        Debug.Log("뉴스 팝업 3이 열립니다.");
+        SetDialogue("dialogue_talk_1_003");
+    }
 
-        var dataList = DaniTechGameDataManager.Instance.RobbyDialogueDataList;
-        foreach (var dataKv in dataList)
-        {
-            var data = dataKv.Value;
-            if (data == null) continue;
-            if (data.Id == "dialogue_talk_1_002")
-            {
-                Text_News3.text = data.Description;
-                break;
-            }
-        }
+    private void OnClick_Back()
+    {
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
+    }
+
+    private void OnClick_Home()
+    {
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyePopupUI);
     }
 }
