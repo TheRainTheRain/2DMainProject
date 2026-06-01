@@ -79,7 +79,7 @@ public class MainDialogueUI : DaniTechUIBase
         }
 
         string dialogueId = _dialogueQueue.Dequeue();
-        var dialogueData = DaniTechGameDataManager.Instance.GetDialogueData(dialogueId);
+        var dialogueData = DaniTechGameDataManager.Instance.GetMainDialogueData(dialogueId);
         if (dialogueData == null)
         {
             Debug.LogWarning($"대사 데이터가 없습니다: {dialogueId}");

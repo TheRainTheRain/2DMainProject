@@ -111,6 +111,12 @@ public class RobbyDialogueData : GameDataBase
 }
 
 [System.Serializable]
+public class RobbyDialogueGroupData : GameDataBase
+{
+    public List<string> DialogueIdList;
+}
+
+[System.Serializable]
 public class DNDialogueGroupData : GameDataBase
 {
     public List<string> DialogueIdList;

@@ -56,19 +56,28 @@ public class AugmenredEyePopupUI : DaniTechUIBase
 
     private void OnClick_News1()
     {
-        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
+        var popup = DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
+        if (popup == null) return;
+        if (popup is AugmenredEyeTextPopupUI textPopup)
+            textPopup.SetupSlot("dialogue_group_1_1");
         SetDialogue("dialogue_talk_1_001");
     }
 
     private void OnClick_News2()
     {
-        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
+        var popup = DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
+        if (popup == null) return;
+        if (popup is AugmenredEyeTextPopupUI textPopup)
+            textPopup.SetupSlot("dialogue_group_1_2");
         SetDialogue("dialogue_talk_1_002");
     }
 
     private void OnClick_News3()
     {
-        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
+        var popup = DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
+        if (popup == null) return;
+        if (popup is AugmenredEyeTextPopupUI textPopup)
+            textPopup.SetupSlot("dialogue_group_1_3");
         SetDialogue("dialogue_talk_1_003");
     }
 

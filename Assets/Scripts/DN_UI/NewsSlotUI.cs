@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using UnityEngine.ResourceManagement.ResourceProviders;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class NewsSlotUI : MonoBehaviour
@@ -8,22 +8,18 @@ public class NewsSlotUI : MonoBehaviour
 
     private string _slotDataId;
 
-    public void InitSlot(string dataId)
+    public void InitSlot(string groupId)
     {
-        _slotDataId = dataId;
+        _slotDataId = groupId;
 
-        var dataList = DaniTechGameDataManager.Instance.RobbyDialogueDataList;
-        RobbyDialogueData targetData = null;
+        var groupData = DaniTechGameDataManager.Instance.GetRobbyDialogueGroupData(groupId);
+        if (groupData == null) return;
 
-        foreach (var dataKv in  dataList)
-        {
-            var textData = dataKv.Value;
-            if (textData == null) continue;
-        }
+        var detailId = groupData.DialogueIdList[1];
 
-        Text_MainText.text = targetData.Description;
+        var detailData = DaniTechGameDataManager.Instance.GetRobbyDialogueData(detailId);
+        if (detailData == null) return;
+
+        Text_MainText.text = detailData.Description;
     }
-
-
-
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class AugmenredEyeTextPopupUI : DaniTechUIBase
 {
@@ -12,7 +13,8 @@ public class AugmenredEyeTextPopupUI : DaniTechUIBase
 
     [Header("디테일 정보")]
     [SerializeField] private Text Text_MainText;
-        
+    [SerializeField] private ScrollRect ScrollView;
+
 
     [Header("버튼")]
     [SerializeField] private DaniTechUIButton Button_Back;
@@ -24,11 +26,25 @@ public class AugmenredEyeTextPopupUI : DaniTechUIBase
     {
         Button_Back.BindOnClickButtonEvent(OnClick_Back);
         Button_Home.BindOnClickButtonEvent(OnClick_Home);
+        ScrollView.verticalNormalizedPosition = 1f;
+    }
+
+    private void OnDisable()
+    {
+        foreach (var slot in _slotList.Values)
+        {
+            if (slot != null)
+            {
+                Destroy(slot.gameObject);
+            }
+        }
+
+        _slotList.Clear();
     }
 
     private void ReadTextListAndCreateSlot()
     {
-        var dataList = DaniTechGameDataManager.Instance.RobbyDialogueDataList;
+        var dataList = DaniTechGameDataManager.Instance.RobbyDialogueGroupDataList;
         foreach (var dataKv in dataList)
         {
             var data = dataKv.Value;
@@ -37,9 +53,8 @@ public class AugmenredEyeTextPopupUI : DaniTechUIBase
                 continue;
             }
 
-            CreateGameSlot(data.Id);
+            CreateNewsSlot(data.Id);
         }
-
     }
 
     private void OnClick_Back()
@@ -53,7 +68,7 @@ public class AugmenredEyeTextPopupUI : DaniTechUIBase
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyePopupUI);
     }
 
-    private void CreateGameSlot(string dataId)
+    private void CreateNewsSlot(string dataId)
     {
         var gObj = Instantiate(Prefeb_Slot, Transform_SlotRoot);
         if (gObj == null) return;
@@ -63,5 +78,15 @@ public class AugmenredEyeTextPopupUI : DaniTechUIBase
 
         slotComponent.InitSlot(dataId);
         _slotList.Add(dataId, slotComponent);
+    }
+
+    public void SetupSlot(string groupId)
+    {
+        foreach (var slot in _slotList.Values)
+        {
+            if (slot != null) Destroy(slot.gameObject);
+        }
+        _slotList.Clear();
+        CreateNewsSlot(groupId);
     }
 }

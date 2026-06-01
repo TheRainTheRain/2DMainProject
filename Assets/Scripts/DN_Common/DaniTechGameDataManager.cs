@@ -40,6 +40,8 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, MainDialogueGroupData> MainDialogueGroupDataList { get; private set; } = new Dictionary<string, MainDialogueGroupData>();
     public Dictionary<string, MainDialogueData> MainDialogueDataList { get; private set; } = new Dictionary<string, MainDialogueData>();
     public Dictionary<string, RobbyDialogueData> RobbyDialogueDataList { get; private set; } = new Dictionary<string, RobbyDialogueData>();
+    public Dictionary<string, RobbyDialogueGroupData> RobbyDialogueGroupDataList { get; private set; } = new Dictionary<string, RobbyDialogueGroupData>();
+
 
 
 
@@ -133,9 +135,10 @@ public class DaniTechGameDataManager : MonoBehaviour
         MainDialogueDataList = LoadData<MainDialogueData>("MainDialogue");
     }
 
-    public void LoadRobbyDialogueData(string jsonPath)
+    public void LoadRobbyDialogueData()
     {
-        RobbyDialogueDataList = LoadData<RobbyDialogueData>(jsonPath);
+        RobbyDialogueGroupDataList = LoadData<RobbyDialogueGroupData>("RobbyDialogueGroup");
+        RobbyDialogueDataList = LoadData<RobbyDialogueData>("RobbyDialogue");
     }
 
     public void LoadDNDialogueData()
@@ -238,7 +241,7 @@ public class DaniTechGameDataManager : MonoBehaviour
         return MainDialogueGroupDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 
-    public MainDialogueData GetDialogueData(string dataId)
+    public MainDialogueData GetMainDialogueData(string dataId)
     {
         if (MainDialogueDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
@@ -250,5 +253,12 @@ public class DaniTechGameDataManager : MonoBehaviour
         if (RobbyDialogueDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
         return RobbyDialogueDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public RobbyDialogueGroupData GetRobbyDialogueGroupData(string dataId)
+    {
+        if (RobbyDialogueGroupDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return RobbyDialogueGroupDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 }

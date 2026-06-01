@@ -18,6 +18,8 @@ public class OpeningExitUI : DaniTechUIBase
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.OpeningExitPopupUI);
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.MakeCocktailUI);
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.MainDialogueUI);
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyePopupUI);
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.PhoneRobbyPopupUI);
         Debug.Log("타이틀 화면이 열립니다!");
     }
 
