@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a38ce816b7892842b04c17debf8daee
+    m_Address: Texture2D/Character_Sei_Smile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0bd351b30ee036845b369ec9ffa0145f
     m_Address: Icon/Cocktail_CreviceSpike_1
     m_ReadOnly: 0
@@ -47,6 +52,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 206a582733ec1344282b6a5c1927bb42
     m_Address: Icon/Cocktail_Beer_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 222a38f4f712050479ce221013e09dd5
+    m_Address: Texture2D/Character_Sei_Sad
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -102,11 +112,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 43237ee419ec47b49a6349f963676aa1
     m_Address: 2DPrefab/Harvest_Potato
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 43af6ae429c423b4b94fee36996fcf04
-    m_Address: Texture2D/Character_Sei_Sad
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -257,11 +262,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ec844cbf224b2634f8a63e15a95d6a1c
     m_Address: Texture2D/Character_Sei_Meka
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ed0401d4d1a134e46a376c48fbf3179b
-    m_Address: Texture2D/Character_Sei_Smile
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
