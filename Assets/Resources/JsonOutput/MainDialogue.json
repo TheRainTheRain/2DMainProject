@@ -1183,10 +1183,130 @@
     "Id": "dialogue_mainDialogue_2_3_013",
     "CharacterDataId": "character_sei_01",
     "Description": "음료 맛있었어요.. 다음에 또 올게요.",
-    "NextDialogueId": null,
+    "NextDialogueId": "dialogue_mainDialogue_2_3_014",
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
     "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_014",
+    "CharacterDataId": "character_jill_01",
+    "Description": "감사합니다. 다음에 또 오세요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_015",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_015",
+    "CharacterDataId": "character_jill_01",
+    "Description": "...",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_016",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_016",
+    "CharacterDataId": "character_jill_01",
+    "Description": "이렇게 하루가 끝났군.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_017",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_017",
+    "CharacterDataId": "character_boss_01",
+    "Description": "오늘 밤은 여기까지인가?",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_018",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Boss_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_018",
+    "CharacterDataId": "character_jill_01",
+    "Description": "그런 것 같아요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_019",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Boss_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_019",
+    "CharacterDataId": "character_boss_01",
+    "Description": "음...",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_020",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Boss_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_020",
+    "CharacterDataId": "character_jill_01",
+    "Description": "저기 보스, 제가 \"보스\"라고 부르면 좀 차갑게 들리나요?",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_021",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Boss_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_021",
+    "CharacterDataId": "character_boss_01",
+    "Description": "음? 별로, 아냐.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_022",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Boss_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_022",
+    "CharacterDataId": "character_boss_01",
+    "Description": "내가 어색해서 그렇게 부르는게 아니라, 그냥 습관적으로 그렇게 부르는거잖아.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_023",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Boss_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_023",
+    "CharacterDataId": "character_jill_01",
+    "Description": "아...",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_024",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Boss_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_024",
+    "CharacterDataId": "character_boss_01",
+    "Description": "어찌됐건, 유리잔들 설거지 끝나고 나면 가도 좋아.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_025",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Boss_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_025",
+    "CharacterDataId": "character_boss_01",
+    "Description": "오늘자 봉급은 계좌로 넣어줄게.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Boss_Basic",
     "VoicePath": null
   }
 ]

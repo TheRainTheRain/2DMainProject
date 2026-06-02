@@ -798,8 +798,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 104, y: 14}
-  m_SizeDelta: {x: 267.0363, y: 241.4518}
+  m_AnchoredPosition: {x: 132, y: 20}
+  m_SizeDelta: {x: 160.6567, y: 183.555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5001169718603487541
 CanvasRenderer:
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bebd786e7e85d340bebc0856b60df21, type: 3}
+  m_Sprite: {fileID: 729032009, guid: ef1fa02380774fe4f83c8ca1c47b45e6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -852,13 +852,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DaniTechUIImageSequencer
   SpriteArray_Sprite:
-  - {fileID: 21300000, guid: 7bebd786e7e85d340bebc0856b60df21, type: 3}
-  - {fileID: 21300000, guid: 743e30ac52ca6d8448a1bfbef68e9123, type: 3}
-  - {fileID: 21300000, guid: 7bebd786e7e85d340bebc0856b60df21, type: 3}
-  - {fileID: 21300000, guid: 743e30ac52ca6d8448a1bfbef68e9123, type: 3}
-  - {fileID: 21300000, guid: 7bebd786e7e85d340bebc0856b60df21, type: 3}
-  - {fileID: 21300000, guid: 743e30ac52ca6d8448a1bfbef68e9123, type: 3}
-  _sequenceInterval: 0.5
+  - {fileID: 729032009, guid: ef1fa02380774fe4f83c8ca1c47b45e6, type: 3}
+  - {fileID: -672815233, guid: ef1fa02380774fe4f83c8ca1c47b45e6, type: 3}
+  - {fileID: -1522402909, guid: ef1fa02380774fe4f83c8ca1c47b45e6, type: 3}
+  - {fileID: 1306681161, guid: ef1fa02380774fe4f83c8ca1c47b45e6, type: 3}
+  _sequenceInterval: 0.2
   _isLoop: 1
 --- !u!1 &6618183302618876195
 GameObject:

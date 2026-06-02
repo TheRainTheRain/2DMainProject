@@ -362,7 +362,7 @@ public class MakeCocktailUI : DaniTechUIBase
         }
         else
         {
-            dialogueUI.OnDialogueEnd += OnGuestFailDialogueEnd;
+            dialogueUI.OnDialogueEnd += OnGuestSuccessDialogueEnd;
             dialogueUI.StartDialogue(null, new string[] { _currentGuest.DialogueGroupId + "_success" });
         }
 
@@ -376,7 +376,7 @@ public class MakeCocktailUI : DaniTechUIBase
 
         if (_currentGuest == null)
         {
-            dialogueUI.OnDialogueEnd += OnGuestSuccessDialogueEnd;
+            dialogueUI.OnDialogueEnd += OnGuestFailDialogueEnd;
             dialogueUI.StartDialogue(null, new string[] { "dialogue_group_tutorial_1_3_fail" });
         }
         else
