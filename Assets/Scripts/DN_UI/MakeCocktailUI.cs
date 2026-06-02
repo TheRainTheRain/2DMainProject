@@ -245,6 +245,7 @@ public class MakeCocktailUI : DaniTechUIBase
         // Length -> 배열이 몇개인지 가져오는것
         if (_currentGuestIndex >= _guestOrder.Length)
         {
+            DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.EndingPopupUI);
             Debug.Log("모든 손님 완료");
             return;
         }
