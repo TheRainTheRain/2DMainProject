@@ -71,6 +71,8 @@ public class MakeCocktailUI : DaniTechUIBase
     private bool _isAge = false;
     private bool _isShaking = false;
 
+    private CocktailRecipeData _currentMatchedRecipe;
+
     private void OnEnable()
     {
         _defaultShakerSprite = Image_Shaker.sprite;
@@ -160,8 +162,6 @@ public class MakeCocktailUI : DaniTechUIBase
         Debug.Log("숙성 상태 변경");
     }
 
-    private CocktailRecipeData _currentMatchedRecipe;
-
     // 요 부분은 AI가 많이 도와줬습니다,,, ======================= 기능 관련 메서드들 입니다 =====================
 
     private void OnClick_Retry()
@@ -234,6 +234,43 @@ public class MakeCocktailUI : DaniTechUIBase
         }
     }
 
+
+    // 손님 관련
+    private GuestData _currentGuest;
+    private string[] _guestOrder = { "guest_donoban_01", "guest_sei_01" };
+    private int _currentGuestIndex = 0;
+
+    private void LoadNextGuest()
+    {
+        // Length -> 배열이 몇개인지 가져오는것
+        if (_currentGuestIndex >= _guestOrder.Length)
+        {
+            Debug.Log("모든 손님 완료");
+            return;
+        }
+
+        // 인덱스 배열로 손님 Id 가져오기
+        string guestId = _guestOrder[_currentGuestIndex];
+
+        // 데이터 매니제에서 손님 데이터 가져오기
+        _currentGuest = DaniTechGameDataManager.Instance.GetGuestData(guestId);
+
+        _currentGuestIndex++;
+
+        if (_currentGuest == null)
+        {
+            Debug.LogWarning($"손님 데이터가 없습니다 {guestId}");
+            return;
+        }
+
+        var dialogueUI = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MainDialogueUI) as MainDialogueUI;
+        if (dialogueUI != null)
+        {
+            dialogueUI.StartDialogue(null, new string[] { _currentGuest.DialogueGroupId });
+        }
+
+    }
+
     private CocktailRecipeData FindMatchedRecipe(DaniTechGameDataManager dataManager)
     {
         foreach (var kv in dataManager.CocktailRecipeDataList)
@@ -298,36 +335,60 @@ public class MakeCocktailUI : DaniTechUIBase
         string recipeId = _currentMatchedRecipe.Id;
         Debug.Log($"recipeId: {recipeId}");
 
-        bool isSuccess = (recipeId == "Cocktail_SugarRush_2" || recipeId == "Cocktail_PianoMan_2");
-
-        if (isSuccess)
+        bool isSuccess = false;
+        if (_currentGuest == null)
         {
-            OnSubmitSuccess();
+            isSuccess = (recipeId == "Cocktail_SugarRush_2" || recipeId == "Cocktail_PianoMan_2");
         }
         else
         {
-            OnSubmitFail();
+            isSuccess = (_currentGuest.OrderCocktailId == recipeId);
         }
+
+        if (isSuccess) OnSubmitSuccess();
+        else OnSubmitFail();
     }
 
     private void OnSubmitSuccess()
     {
         OnClick_Retry();
         var dialogueUI = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MainDialogueUI) as MainDialogueUI;
-        if (dialogueUI != null)
+        if (dialogueUI == null) return;
+
+        if (_currentGuest == null)
         {
+            dialogueUI.OnDialogueEnd += OnTutorialDialogueEnd;
             dialogueUI.StartDialogue(null, new string[] { "dialogue_group_tutorial_1_3_success" });
         }
+        else
+        {
+            dialogueUI.OnDialogueEnd += OnTutorialDialogueEnd;
+            dialogueUI.StartDialogue(null, new string[] { _currentGuest.DialogueGroupId + "_success" });
+        }
+
     }
 
     private void OnSubmitFail()
     {
         OnClick_Retry();
         var dialogueUI = DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MainDialogueUI) as MainDialogueUI;
-        if (dialogueUI != null)
+        if (dialogueUI == null) return;
+
+        if (_currentGuest == null)
         {
+            dialogueUI.OnDialogueEnd += OnTutorialDialogueEnd;
             dialogueUI.StartDialogue(null, new string[] { "dialogue_group_tutorial_1_3_fail" });
         }
+        else
+        {
+            dialogueUI.OnDialogueEnd += OnTutorialDialogueEnd;
+            dialogueUI.StartDialogue(null, new string[] {_currentGuest.DialogueGroupId + "_fail" });
+        }
+    }
+
+    private void OnTutorialDialogueEnd()
+    {
+        LoadNextGuest();
     }
 
     private void UpdateSlot(Image[] slot, int count, Sprite sprite)

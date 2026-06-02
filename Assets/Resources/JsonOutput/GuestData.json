@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "guest_donoban_01",
+    "CharacterDataId": "character_donoban_01",
+    "DialogueGroupId": "dialogue_group_mainDialogue_1_1",
+    "OrderCocktailId": "Cocktail_Beer_2"
+  },
+  {
+    "Id": "guest_sei_01",
+    "CharacterDataId": "character_sei_01",
+    "DialogueGroupId": "dialogue_group_mainDialogue_1_2",
+    "OrderCocktailId": "Cocktail_MoonBlast_2"
+  }
+]

@@ -105,8 +105,23 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43af6ae429c423b4b94fee36996fcf04
+    m_Address: Texture2D/Character_Sei_Sad
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 491219ba1c8769248a0cd6f6c0040361
+    m_Address: Texture2D/Character_Donoban_Basic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 49fb0ac197893d947b62ef8c0846a92b
     m_Address: Icon/Cocktail_SunshineCloud_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a47c4a33960e9b4db51cd01a025f32d
+    m_Address: Texture2D/Character_Donoban_Dismay
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -147,6 +162,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 88b0217cdb0635e4b8f2a111542db679
     m_Address: Icon/Cocktail_SparkleStar_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b6d1602334f0974c91279be9278a826
+    m_Address: Texture2D/Character_Donoban_Smile
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -195,6 +215,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c572d9179ba6f564e8fff6041d1cd903
+    m_Address: Texture2D/Character_Sei_Basic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cfc5f99017f834a4aa425168d9f3048d
     m_Address: Icon/Icon_Item_Corn
     m_ReadOnly: 0
@@ -227,6 +252,16 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ea741fadeb0393844b44e849ddd975f0
     m_Address: Icon/Cocktail_FluffyDream_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec844cbf224b2634f8a63e15a95d6a1c
+    m_Address: Texture2D/Character_Sei_Meka
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed0401d4d1a134e46a376c48fbf3179b
+    m_Address: Texture2D/Character_Sei_Smile
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

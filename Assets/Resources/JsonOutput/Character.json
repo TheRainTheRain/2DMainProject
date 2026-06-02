@@ -43,5 +43,23 @@
     "UseWeaponId": null,
     "BasicCostumeId": null,
     "NameColor": "#791E91"
+  },
+  {
+    "Id": "character_donoban_01",
+    "Name": "도노반:",
+    "Description": null,
+    "SkillList": null,
+    "UseWeaponId": null,
+    "BasicCostumeId": null,
+    "NameColor": null
+  },
+  {
+    "Id": "character_sei",
+    "Name": "  세이:",
+    "Description": null,
+    "SkillList": null,
+    "UseWeaponId": null,
+    "BasicCostumeId": null,
+    "NameColor": null
   }
 ]

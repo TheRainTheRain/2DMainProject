@@ -112,6 +112,10 @@ public class MainDialogueUI : DaniTechUIBase
         Button_Next.UnBindOnClickButtonEvent(OnClick_Next);
     }
 
+
+
+
+    //이름과 이름 색상 설정하는 함수
     private void SetCharacterName(string characterDataId)
     {
         bool isActive = (string.IsNullOrEmpty(characterDataId) == false);

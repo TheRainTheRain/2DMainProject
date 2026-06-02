@@ -41,6 +41,7 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, MainDialogueData> MainDialogueDataList { get; private set; } = new Dictionary<string, MainDialogueData>();
     public Dictionary<string, RobbyDialogueData> RobbyDialogueDataList { get; private set; } = new Dictionary<string, RobbyDialogueData>();
     public Dictionary<string, RobbyDialogueGroupData> RobbyDialogueGroupDataList { get; private set; } = new Dictionary<string, RobbyDialogueGroupData>();
+    public Dictionary<string, GuestData> GuestDataList { get; private set; } = new Dictionary<string, GuestData>();
 
 
 
@@ -129,6 +130,11 @@ public class DaniTechGameDataManager : MonoBehaviour
         CocktailRecipeDataList = LoadData<CocktailRecipeData>(jsonPath);
     }
 
+    public void LoadGuestData(string jsonPath)
+    {
+        GuestDataList = LoadData<GuestData>(jsonPath);
+    }
+
     public void LoadMainDialogueData()
     {
         MainDialogueGroupDataList = LoadData<MainDialogueGroupData>("MainDialogueGroup");
@@ -204,6 +210,13 @@ public class DaniTechGameDataManager : MonoBehaviour
         if (CocktailDataList == null || string.IsNullOrEmpty(id)) return null;
 
         return CocktailDataList.TryGetValue(id, out var data) ? data : null;
+    }
+
+    public GuestData GetGuestData(string id)
+    {
+        if (GuestDataList == null || string.IsNullOrEmpty(id)) return null;
+
+        return GuestDataList.TryGetValue(id, out var data) ? data : null;
     }
 
     public DNDialogueGroupData GetDNDialogueGroupData(string dataId)

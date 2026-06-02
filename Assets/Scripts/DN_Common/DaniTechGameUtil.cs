@@ -25,6 +25,8 @@ public static class DaniTechGameUtil
         DaniTechGameDataManager.Instance.LoadCocktailRecipeData("CocktailRecipe");
         DaniTechGameDataManager.Instance.LoadMainDialogueData();
         DaniTechGameDataManager.Instance.LoadRobbyDialogueData();
+        DaniTechGameDataManager.Instance.LoadGuestData("GuestData");
+
     }
 
     public static int CalcCharacterFinalDamage(int curCharacterLevel, int levelPerDamage, bool isCritical)

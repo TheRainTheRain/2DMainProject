@@ -105,6 +105,14 @@ public class MainDialogueData : GameDataBase
 }
 
 [System.Serializable]
+public class GuestData : GameDataBase
+{
+    public string CharacterDataId;
+    public string DialogueGroupId;
+    public string OrderCocktailId;
+}
+
+[System.Serializable]
 public class RobbyDialogueData : GameDataBase
 {
     public string Description;

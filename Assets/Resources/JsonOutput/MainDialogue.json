@@ -686,7 +686,507 @@
     "NextDialogueId": null,
     "SelectionNameList": null,
     "SelectionDialogueIdList": null,
-    "TexturePath": "Texture2D/Character_Gillian_Basic",
+    "TexturePath": null,
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_1_000",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "거기 너! 맥주 한잔 줘",
+    "NextDialogueId": "dialogue_mainDialogue_1_1_001",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_1_001",
+    "CharacterDataId": "character_jill_01",
+    "Description": "아! 물론이죠, 곧 나갑니다.",
+    "NextDialogueId": "dialogue_mainDialogue_1_1_002",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_1_002",
+    "CharacterDataId": null,
+    "Description": "맥주를 원하는군. 덩치가 꽤 커보이는데.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_2_000",
+    "CharacterDataId": "character_jill_01",
+    "Description": "여기요",
+    "NextDialogueId": "dialogue_mainDialogue_1_2_001",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_2_001",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "...",
+    "NextDialogueId": "dialogue_mainDialogue_1_2_002",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Dismay",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_2_002",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "애송아, 나는 남자야. 성인이라고. 내가 취할 생각이 없었다면, 대체 뭐하러 술집에 왔을거라고 생각하나?",
+    "NextDialogueId": "dialogue_mainDialogue_1_2_003",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Dismay",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_2_003",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "다시 해보자고. 맥주 한잔 줘. 보리 맥, 술 주. 맥.주.",
+    "NextDialogueId": "dialogue_mainDialogue_1_2_004",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_2_004",
+    "CharacterDataId": "character_jill_01",
+    "Description": "아- 알겠습니다...",
+    "NextDialogueId": "dialogue_mainDialogue_1_2_005",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_2_005",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "제길, 질. 정신차려. 손님은 맥주를 원해! 맥.주!",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_000",
+    "CharacterDataId": "character_jill_01",
+    "Description": "여기있습니다.",
+    "NextDialogueId": "dialogue_mainDialogue_1_3_001",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_001",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "그래, 이거 좋군. 정말 괜찮아. 아주 잘 했다 이거야.",
+    "NextDialogueId": "dialogue_mainDialogue_1_3_002",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Smile",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_002",
+    "CharacterDataId": "character_jill_01",
+    "Description": "음..뭐, 감사합니다.",
+    "NextDialogueId": "dialogue_mainDialogue_1_3_003",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Smile",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_003",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "내가 이 동네에서 미팅이 있었다는 사실에 감사하도록 해, 이딴 개떡 같은 곳은 나같은 분의 존재 자체로도 도움이 될테니까.",
+    "NextDialogueId": "dialogue_mainDialogue_1_3_004",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Smile",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_004",
+    "CharacterDataId": "character_jill_01",
+    "Description": "흐음...",
+    "NextDialogueId": "dialogue_mainDialogue_1_3_005",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Smile",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_005",
+    "CharacterDataId": "character_jill_01",
+    "Description": "어떤 일을 하시나요, 손님? 성함이...",
+    "NextDialogueId": "dialogue_mainDialogue_1_3_006",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Smile",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_006",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "너는 어그멘티드 아이의 편집장이자 소유주인 도노반 D.도슨님과 대화를 나누고 있는 거라고.",
+    "NextDialogueId": "dialogue_mainDialogue_1_3_007",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_007",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "어ᄄᅠᆫ 기사도 내 손길이 닿지 않고 발간될 수는 없지.",
+    "NextDialogueId": "dialogue_mainDialogue_1_3_008",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_008",
+    "CharacterDataId": "character_jill_01",
+    "Description": "(참 흥미로운 손님으로 하루를 시작하게 됐는걸.)",
+    "NextDialogueId": "dialogue_mainDialogue_1_3_009",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_1_3_009",
+    "CharacterDataId": "character_donoban_1",
+    "Description": "으음.. 너 덕분에 잘 마시고 간다고.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Donoban_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_000",
+    "CharacterDataId": "character_sei_1",
+    "Description": "안녕하세요!",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_001",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Meka",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_001",
+    "CharacterDataId": "character_jill_01",
+    "Description": "안녕하세-...",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_002",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Meka",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_002",
+    "CharacterDataId": "character_jill_01",
+    "Description": "...",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_003",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Meka",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_003",
+    "CharacterDataId": "character_jill_01",
+    "Description": "저 헬멧은 벗어주시지 않을래요?",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_004",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Meka",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_004",
+    "CharacterDataId": "character_sei_1",
+    "Description": "네? 아, 미안해요. 너무 편안해서 쓰고 있다는걸 자주 까먹어요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_005",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Meka",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_005",
+    "CharacterDataId": "character_sei_1",
+    "Description": "이제 좀 낫나요?",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_006",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_006",
+    "CharacterDataId": "character_jill_01",
+    "Description": "네, 고맙습니다.",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_007",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_007",
+    "CharacterDataId": "character_jill_01",
+    "Description": "어떤걸로 드릴까요, 어, 성함이..?",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_008",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_008",
+    "CharacterDataId": "character_sei_1",
+    "Description": "발키리 군단 제 765부대 소속 특수 상등병, 세이 P 아사기리 대령했습니다!",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_009",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_009",
+    "CharacterDataId": "character_sei_1",
+    "Description": "음...이건 너무 길죠, 그냥 세이라고 불러주세요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_010",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_010",
+    "CharacterDataId": "character_jill_01",
+    "Description": "어떤걸로 드릴까요, 세이?",
+    "NextDialogueId": "dialogue_mainDialogue_2_1_011",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_1_011",
+    "CharacterDataId": "character_sei_1",
+    "Description": "음...작고, 달콤하고, 차가운..문블라스트가 좋겠네요.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_2_000",
+    "CharacterDataId": "character_jill_01",
+    "Description": "여기요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_2_001",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_2_001",
+    "CharacterDataId": "character_sei_1",
+    "Description": "음...",
+    "NextDialogueId": "dialogue_mainDialogue_2_2_002",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Sad",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_2_002",
+    "CharacterDataId": "character_sei_1",
+    "Description": "제가 원하는 음료는 아닌것 같아요...",
+    "NextDialogueId": "dialogue_mainDialogue_2_2_003",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Sad",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_2_003",
+    "CharacterDataId": "character_sei_1",
+    "Description": "다시 만들어주셨으면 좋겠어요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_2_004",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Sad",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_2_004",
+    "CharacterDataId": "character_jill_01",
+    "Description": "다시한번 세이에게 문블라스트를 만들어주자. 문블라스트!",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Sad",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_000",
+    "CharacterDataId": "character_sei_1",
+    "Description": "아아 좋아, 딱 제가 원했던 거예요. 감사합니다!",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_001",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Smile",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_001",
+    "CharacterDataId": "character_jill_01",
+    "Description": "화이트 나이츠 손님은 그리 많지 않은데 말이죠, 사실 제대로 기억나는건 한명 뿐이지만요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_002",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Smile",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_002",
+    "CharacterDataId": "character_jill_01",
+    "Description": "발키리 군단 소속이라고 하셨죠? 그럼 폭동 진압 같은 일들을 하시나요?",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_003",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Smile",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_003",
+    "CharacterDataId": "character_sei_1",
+    "Description": "폭동...? 아! 아뇨아뇨아뇨... 그건 아마 블리츠크리그 군단일거에요. 엄청 큰 갑옷 입은 부대 말하는 거죠?",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_004",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_004",
+    "CharacterDataId": "character_jill_01",
+    "Description": "네, 맞아요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_005",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_005",
+    "CharacterDataId": "character_sei_1",
+    "Description": "아뇨, 그쪽이랑은 달라요. 음...정말 완전히 다른 부대라고요. 우리는 폭동 진압 같은 일은 전혀 하지 않아요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_006",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_006",
+    "CharacterDataId": "character_sei_1",
+    "Description": "오히려, 그들의 뒷처리를 맡는 부대라고 할 수 있겠네요.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_007",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_007",
+    "CharacterDataId": "character_jill_01",
+    "Description": "무슨말이죠?",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_008",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_008",
+    "CharacterDataId": "character_sei_1",
+    "Description": "\"구조하라, 치료하라, 보호하라! 우리는 적습으로 고통받는 자들에게 위안을 주는 천사들일지어니!\"",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_009",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_009",
+    "CharacterDataId": "character_sei_1",
+    "Description": "\"우리는 가장 어두운 시기에 타오르는 빛이자, 범죄의 희생양들을 도와주는 자!\"",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_010",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_010",
+    "CharacterDataId": "character_sei_1",
+    "Description": "\"우리는 감시하고, 또한 수호한다!\"",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_011",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_011",
+    "CharacterDataId": "character_jill_01",
+    "Description": "음...방금 그건 뭐였죠?",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_012",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_012",
+    "CharacterDataId": "character_sei_1",
+    "Description": "미안해요. 아까 그건 우리의 복무신조 비슷한거에요. 매일 아침에 복창하는거죠.",
+    "NextDialogueId": "dialogue_mainDialogue_2_3_013",
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
+    "VoicePath": null
+  },
+  {
+    "Id": "dialogue_mainDialogue_2_3_013",
+    "CharacterDataId": "character_sei_1",
+    "Description": "음료 맛있었어요.. 다음에 또 올게요.",
+    "NextDialogueId": null,
+    "SelectionNameList": null,
+    "SelectionDialogueIdList": null,
+    "TexturePath": "Texture2D/Character_Sei_Basic",
     "VoicePath": null
   }
 ]
