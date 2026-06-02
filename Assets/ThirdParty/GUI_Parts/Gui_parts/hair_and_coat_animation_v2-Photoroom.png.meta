@@ -116,7 +116,7 @@ TextureImporter:
         x: 27
         y: 380
         width: 335
-        height: 599
+        height: 600
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,9 +136,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 405
-        y: 377
-        width: 340
-        height: 601
+        y: 380
+        width: 335
+        height: 600
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +157,10 @@ TextureImporter:
       name: hair_and_coat_animation_v2-Photoroom_2
       rect:
         serializedVersion: 2
-        x: 773
-        y: 374
-        width: 372
-        height: 599
+        x: 803
+        y: 380
+        width: 335
+        height: 600
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,10 +179,10 @@ TextureImporter:
       name: hair_and_coat_animation_v2-Photoroom_3
       rect:
         serializedVersion: 2
-        x: 1169
-        y: 372
-        width: 395
-        height: 612
+        x: 1225
+        y: 380
+        width: 335
+        height: 600
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +201,10 @@ TextureImporter:
       name: hair_and_coat_animation_v2-Photoroom_4
       rect:
         serializedVersion: 2
-        x: 1596
-        y: 375
-        width: 371
-        height: 596
+        x: 1628
+        y: 380
+        width: 335
+        height: 600
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: hair_and_coat_animation_v2-Photoroom_5
       rect:
         serializedVersion: 2
-        x: 1979
+        x: 2013
         y: 380
-        width: 421
-        height: 590
+        width: 335
+        height: 600
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,7 +250,7 @@ TextureImporter:
         width: 53
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
