@@ -357,12 +357,12 @@ public class MakeCocktailUI : DaniTechUIBase
 
         if (_currentGuest == null)
         {
-            dialogueUI.OnDialogueEnd += OnTutorialDialogueEnd;
+            dialogueUI.OnDialogueEnd += OnGuestSuccessDialogueEnd;
             dialogueUI.StartDialogue(null, new string[] { "dialogue_group_tutorial_1_3_success" });
         }
         else
         {
-            dialogueUI.OnDialogueEnd += OnTutorialDialogueEnd;
+            dialogueUI.OnDialogueEnd += OnGuestFailDialogueEnd;
             dialogueUI.StartDialogue(null, new string[] { _currentGuest.DialogueGroupId + "_success" });
         }
 
@@ -376,19 +376,24 @@ public class MakeCocktailUI : DaniTechUIBase
 
         if (_currentGuest == null)
         {
-            dialogueUI.OnDialogueEnd += OnTutorialDialogueEnd;
+            dialogueUI.OnDialogueEnd += OnGuestSuccessDialogueEnd;
             dialogueUI.StartDialogue(null, new string[] { "dialogue_group_tutorial_1_3_fail" });
         }
         else
         {
-            dialogueUI.OnDialogueEnd += OnTutorialDialogueEnd;
+            dialogueUI.OnDialogueEnd += OnGuestFailDialogueEnd;
             dialogueUI.StartDialogue(null, new string[] {_currentGuest.DialogueGroupId + "_fail" });
         }
     }
 
-    private void OnTutorialDialogueEnd()
+    private void OnGuestSuccessDialogueEnd()
     {
         LoadNextGuest();
+    }
+
+    private void OnGuestFailDialogueEnd()
+    {
+
     }
 
     private void UpdateSlot(Image[] slot, int count, Sprite sprite)
