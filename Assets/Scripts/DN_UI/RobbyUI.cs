@@ -22,6 +22,7 @@ public class RobbyUI : DaniTechUIBase
         );
         DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MakeCocktailUI);
 
+
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.RobbyUI);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.PhoneRobbyPopupUI);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyePopupUI);
