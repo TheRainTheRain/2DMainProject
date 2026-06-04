@@ -23,6 +23,7 @@ public class DNCharacterData : GameDataBase
     public string UseWeaponId;
     public string BasicCostumeId;
     public string NameColor;
+    public string TypingSFXPath;
 }
 
 [System.Serializable]

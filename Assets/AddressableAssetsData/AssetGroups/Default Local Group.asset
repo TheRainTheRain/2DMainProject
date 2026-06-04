@@ -135,6 +135,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cae6612e06ba4343839b47acff1fef4
+    m_Address: Sound/Voice_Man_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 667b719d1d688874a8f6a8ad59d98106
     m_Address: Icon/Icon_Item_Box_1
     m_ReadOnly: 0
@@ -197,6 +202,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 988485599ab6ecb4db508e35e6b5086a
     m_Address: Sound/Pugmia_Bgm_Housing_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a3d88647c954324ca92b71a1e4a3ad3
+    m_Address: Sound/Voice_She_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

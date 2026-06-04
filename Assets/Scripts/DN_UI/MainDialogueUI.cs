@@ -22,6 +22,7 @@ public class MainDialogueUI : DaniTechUIBase
     public event Action OnDialogueEnd;
     private Action _onDialogueEndCallback;
     private bool _isTyping = false;
+    private string _currentTypingSFX = string.Empty;
 
     private void OnEnable()
     {
@@ -135,6 +136,7 @@ public class MainDialogueUI : DaniTechUIBase
             if (characterData != null)
             {
                 string displayName = characterData.Name;
+                SetTypingSFX(characterData.TypingSFXPath);
                 if (displayName.Length <= 2)
                 {
                     // 여백을 없애주는 코드입니다.
@@ -160,6 +162,18 @@ public class MainDialogueUI : DaniTechUIBase
         }
     }
 
+    private void SetTypingSFX(string typingSFXPath)
+    {
+        if (string.IsNullOrEmpty(typingSFXPath) == false)
+        {
+            _currentTypingSFX = typingSFXPath;
+        }
+        else
+        {
+            _currentTypingSFX = string.Empty;
+        }
+    }
+
     private string originText;
     private Coroutine _typingCoroutine;
 
@@ -181,6 +195,10 @@ public class MainDialogueUI : DaniTechUIBase
         for (int index = 0; index <= typingLength; index++)
         {
             Text_MainDialogue.text = originText.Typing(index);
+            if (string.IsNullOrEmpty(_currentTypingSFX) == false)
+            {
+                DaniTechSoundManager.Inst.PlaySFX(_currentTypingSFX);
+            }
             yield return new WaitForSeconds(0.02f);
         }
         _isTyping = false;
