@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using KoreanTyper;
+using System.Collections;
 
 public class MainDialogueUI : DaniTechUIBase
 {
@@ -16,9 +18,10 @@ public class MainDialogueUI : DaniTechUIBase
     private Queue<string> _dialogueQueue = new Queue<string>();
     private string _currentDialogueGroupId = string.Empty;
 
-    //요건 AI한테..
+
     public event Action OnDialogueEnd;
     private Action _onDialogueEndCallback;
+    private bool _isTyping = false;
 
     private void OnEnable()
     {
@@ -86,7 +89,7 @@ public class MainDialogueUI : DaniTechUIBase
             return;
         }
 
-        Text_MainDialogue.text = dialogueData.Description;
+        StartTyping(dialogueData.Description);
         SetCharacterName(dialogueData.CharacterDataId);
 
         if (string.IsNullOrEmpty(dialogueData.TexturePath) == false)
@@ -104,6 +107,14 @@ public class MainDialogueUI : DaniTechUIBase
 
     private void OnClick_Next()
     {
+        if (_isTyping)
+        {
+            // 타이핑 중이면 즉시 완성
+            StopCoroutine(_typingCoroutine);
+            Text_MainDialogue.text = originText;
+            _isTyping = false;
+            return;
+        }
         ShowNextDialogue();
     }
 
@@ -111,9 +122,6 @@ public class MainDialogueUI : DaniTechUIBase
     {
         Button_Next.UnBindOnClickButtonEvent(OnClick_Next);
     }
-
-
-
 
     //이름과 이름 색상 설정하는 함수
     private void SetCharacterName(string characterDataId)
@@ -150,5 +158,31 @@ public class MainDialogueUI : DaniTechUIBase
                 }
             }
         }
+    }
+
+    private string originText;
+    private Coroutine _typingCoroutine;
+
+    // 텍스트 에셋 사용 부분
+
+    private void StartTyping(string text)
+    {
+        originText = text;
+        Text_MainDialogue.text = "";
+        if (_typingCoroutine != null)
+            StopCoroutine(_typingCoroutine);
+        _isTyping = true;
+        _typingCoroutine = StartCoroutine(TypingRoutine());
+    }
+
+    IEnumerator TypingRoutine()
+    {
+        int typingLength = originText.GetTypingLength();
+        for (int index = 0; index <= typingLength; index++)
+        {
+            Text_MainDialogue.text = originText.Typing(index);
+            yield return new WaitForSeconds(0.02f);
+        }
+        _isTyping = false;
     }
 }
