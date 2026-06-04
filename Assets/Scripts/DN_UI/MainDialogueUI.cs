@@ -199,7 +199,7 @@ public class MainDialogueUI : DaniTechUIBase
             {
                 DaniTechSoundManager.Inst.PlaySFX(_currentTypingSFX);
             }
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.03f);
         }
         _isTyping = false;
     }
