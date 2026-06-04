@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Opening : DaniTechUIBase
+public class OpeningUI : DaniTechUIBase
 {
     [SerializeField] private DaniTechUIButton Button_Gamestart;
     [SerializeField] private DaniTechUIButton Button_Quit;
@@ -9,10 +9,12 @@ public class Opening : DaniTechUIBase
     {
         Button_Gamestart.BindOnClickButtonEvent(OnClick_GameStart);
         Button_Quit.BindOnClickButtonEvent(OnClick_Quit);
+        DaniTechSoundManager.Inst.PlayBGM("Sound/Intro_Bgm_1");
     }
 
     private void OnClick_GameStart()
     {
+        DaniTechSoundManager.Inst.StopBGM();
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.OpeningUI);
     }
 
