@@ -15,6 +15,8 @@ public class RobbyUI : DaniTechUIBase
 
     private void OnClick_GoToWork()
     {
+        DaniTechSoundManager.Inst.StopBGM();
+        DaniTechSoundManager.Inst.PlayBGM("Sound/Main_Bgm_1");
         DaniTechUIManager.Instance.OpenMainDialogueUI(
             "dialogue_group_tutorial_1_1",
             "dialogue_group_tutorial_1_2",

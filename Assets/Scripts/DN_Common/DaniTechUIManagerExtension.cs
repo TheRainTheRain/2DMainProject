@@ -32,7 +32,8 @@ public enum DaniTechUIType
     PhoneRobbyPopupUI,
     AugmenredEyePopupUI,
     AugmenredEyeTextPopupUI,
-    EndingPopupUI
+    EndingPopupUI,
+    FadePopupUI
 }
 
 public static class DaniTechUIManagerExtension
@@ -161,6 +162,15 @@ public static class DaniTechUIManagerExtension
         if (uiBase is MainDialogueUI mainDialogueUI)
         {
             mainDialogueUI.StartDialogue(null, dialogueGroupIds);
+        }
+    }
+
+    public static void OpenFadeUI(this DaniTechUIManager uIManager)
+    {
+        var uiBase = uIManager.OpenPopupUI(DaniTechUIType.FadePopupUI);
+        if (uiBase is FadePopupUI fadeUI)
+        {
+            fadeUI.Fade();
         }
     }
 }

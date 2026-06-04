@@ -15,6 +15,7 @@ public class OpeningUI : DaniTechUIBase
     private void OnClick_GameStart()
     {
         DaniTechSoundManager.Inst.StopBGM();
+        DaniTechSoundManager.Inst.PlayBGM("Sound/Robby_Bgm_1");
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.OpeningUI);
     }
 
