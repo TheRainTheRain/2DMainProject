@@ -15,5 +15,6 @@ public class EndingPopupUI : DaniTechUIBase
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.EndingPopupUI);
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.MakeCocktailUI);
         DaniTechUIManager.Instance.CloseContentUI(DaniTechUIType.MainDialogueUI);
+        DaniTechSoundManager.Inst.StopBGM();
     }
 }

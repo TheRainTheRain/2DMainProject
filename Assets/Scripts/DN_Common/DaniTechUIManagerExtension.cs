@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public enum DaniTechUIRootType
 {
@@ -50,10 +51,9 @@ public static class DaniTechUIManagerExtension
 
     public static void ShowStartupUIOnGameStart(this DaniTechUIManager uiManager)
     {
-        DaniTechUIManager.Instance.OpenFadeUI();
+        uiManager.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
         uiManager.OpenContentUI(DaniTechUIType.RobbyUI);
         uiManager.OpenContentUI(DaniTechUIType.OpeningUI);
-        uiManager.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
         // 게임 로비 UI를 여기서 오픈해주자 -> uiManager.
         // MainUI도
     }
@@ -166,12 +166,12 @@ public static class DaniTechUIManagerExtension
         }
     }
 
-    public static void OpenFadeUI(this DaniTechUIManager uIManager)
+    public static void OpenFadeUI(this DaniTechUIManager uIManager, Action onComplete = null)
     {
         var uiBase = uIManager.OpenPopupUI(DaniTechUIType.FadePopupUI);
         if (uiBase is FadePopupUI fadeUI)
         {
-            fadeUI.Fade();
+            fadeUI.Fade(onComplete);
         }
     }
 }
