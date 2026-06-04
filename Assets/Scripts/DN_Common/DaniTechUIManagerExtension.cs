@@ -50,6 +50,7 @@ public static class DaniTechUIManagerExtension
 
     public static void ShowStartupUIOnGameStart(this DaniTechUIManager uiManager)
     {
+        DaniTechUIManager.Instance.OpenFadeUI();
         uiManager.OpenContentUI(DaniTechUIType.RobbyUI);
         uiManager.OpenContentUI(DaniTechUIType.OpeningUI);
         uiManager.OpenUI(DaniTechUIRootType.MainUI, DaniTechUIType.MainUI);
