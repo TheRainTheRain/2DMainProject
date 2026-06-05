@@ -53,5 +53,4 @@ public class DaniTechSoundManager : MonoBehaviour
         get { return AudioSourcePlayer.volume; }
         set { AudioSourcePlayer.volume = value; }
     }
-
 }
