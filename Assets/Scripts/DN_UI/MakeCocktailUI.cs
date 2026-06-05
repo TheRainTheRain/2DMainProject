@@ -105,6 +105,7 @@ public class MakeCocktailUI : DaniTechUIBase
             _countAdelhyde++;
             RefreshSlots();
             Debug.Log($"아델하이드를 추가합니다 현재 수량 : {_countAdelhyde}개");
+            DaniTechSoundManager.Inst.PlaySFX("Sound/SFX_Alcohol_In_Shaker");
         }
     }
 
@@ -115,6 +116,7 @@ public class MakeCocktailUI : DaniTechUIBase
             _countBronsonExt++;
             RefreshSlots();
             Debug.Log($"브론순 추출액을 추가합니다 현재 수량 : {_countBronsonExt}개");
+            DaniTechSoundManager.Inst.PlaySFX("Sound/SFX_Alcohol_In_Shaker");
         }
     }
 
@@ -125,6 +127,7 @@ public class MakeCocktailUI : DaniTechUIBase
             _countPwdDelta++;
             RefreshSlots();
             Debug.Log($"델타가루를 추가합니다 현재 수량 : {_countPwdDelta}개");
+            DaniTechSoundManager.Inst.PlaySFX("Sound/SFX_Alcohol_In_Shaker");
         }
     }
 
@@ -135,6 +138,7 @@ public class MakeCocktailUI : DaniTechUIBase
             _countFlanergide++;
             RefreshSlots();
             Debug.Log($"플래너자이드를 추가합니다 현재 수량 : {_countFlanergide}개");
+            DaniTechSoundManager.Inst.PlaySFX("Sound/SFX_Alcohol_In_Shaker");
         }
     }
 
@@ -145,6 +149,7 @@ public class MakeCocktailUI : DaniTechUIBase
             _countKarmotrine++;
             RefreshSlots();
             Debug.Log($"카모트린를 추가합니다 현재 수량 : {_countKarmotrine}개");
+            DaniTechSoundManager.Inst.PlaySFX("Sound/SFX_Alcohol_In_Shaker");
         }
     }
 
@@ -152,6 +157,11 @@ public class MakeCocktailUI : DaniTechUIBase
     {
         _isIce = !_isIce;
         Button_Ice.ChangeButtonSprite(_isIce ? Sprite_Ice_On : Sprite_Ice_Off);
+
+        if (_isIce)
+        {
+            DaniTechSoundManager.Inst.PlaySFX("Sound/SFX_Ice_In_Shaker");
+        }
         Debug.Log("얼음 상태 변경");
     }
 
@@ -159,6 +169,10 @@ public class MakeCocktailUI : DaniTechUIBase
     {
         _isAge = !_isAge;
         Button_Age.ChangeButtonSprite(_isAge ? Sprite_Age_On : Sprite_Age_Off);
+        if (_isAge)
+        {
+            DaniTechSoundManager.Inst.PlaySFX("Sound/SFX_Age");
+        }
         Debug.Log("숙성 상태 변경");
     }
 

@@ -5516,7 +5516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.4, y: -118.44885}
+  m_AnchoredPosition: {x: 7, y: -118.44885}
   m_SizeDelta: {x: 66.0512, y: 147.858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1050075161708713177
@@ -5953,7 +5953,7 @@ MonoBehaviour:
   Sprite_PwdDelta: {fileID: 21300000, guid: 104ad56fbc33ded4192422fa32a1ad61, type: 3}
   Sprite_Flanergide: {fileID: 21300000, guid: 0c98038e000a7c948b81fcb30dbc5a8f, type: 3}
   Sprite_Karmotrine: {fileID: 21300000, guid: 87f852a39a5ca374d9b47954e87a4208, type: 3}
-  Sprite_Ice_On: {fileID: 21300000, guid: 05034814b04af944eaadad953dd83a98, type: 3}
+  Sprite_Ice_On: {fileID: 21300000, guid: 3e412ae6709f1124a9f8fdfe3d7636d8, type: 3}
   Sprite_Ice_Off: {fileID: 21300000, guid: 4adfeae76719d6c43bd36c43bc2307a2, type: 3}
   Sprite_Age_On: {fileID: 21300000, guid: 356ba0eb3346d4143b21edd0fdc8ad9e, type: 3}
   Sprite_Age_Off: {fileID: 21300000, guid: b00dc97850cde674e824b59a79a77dd3, type: 3}
@@ -8413,7 +8413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9.9, y: -118.44885}
+  m_AnchoredPosition: {x: 5, y: -118.44885}
   m_SizeDelta: {x: 45.281, y: 147.858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2803703128927119569
