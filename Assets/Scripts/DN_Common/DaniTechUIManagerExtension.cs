@@ -34,7 +34,8 @@ public enum DaniTechUIType
     AugmenredEyePopupUI,
     AugmenredEyeTextPopupUI,
     EndingPopupUI,
-    FadePopupUI
+    FadePopupUI,
+    SettingPopupUI
 }
 
 public static class DaniTechUIManagerExtension
