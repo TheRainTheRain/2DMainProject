@@ -176,7 +176,19 @@ public class MakeCocktailUI : DaniTechUIBase
         Debug.Log("숙성 상태 변경");
     }
 
-    // 요 부분은 AI가 많이 도와줬습니다,,, ======================= 기능 관련 메서드들 입니다 =====================
+    private void OnClick_Shake()
+    {
+        Debug.Log("OnClick_Shake 호출됨!");
+
+        _isShaking = true;
+
+        ShakerAnim.SteShakerAnimState(ShakerAnimState.Shake);
+        Button_Shake.gameObject.SetActive(false);
+        Button_Stop.gameObject.SetActive(true);
+        Button_Stop.UnBindOnClickButtonEvent(OnClick_Stop);
+        Button_Stop.BindOnClickButtonEvent(OnClick_Stop);
+        Button_Submit.gameObject.SetActive(false);
+    }
 
     private void OnClick_Retry()
     {
@@ -209,20 +221,6 @@ public class MakeCocktailUI : DaniTechUIBase
         Debug.Log("쉐이커 깨끗하게 비움!");
     }
 
-    private void OnClick_Shake()
-    {
-        Debug.Log("OnClick_Shake 호출됨!");
-
-        _isShaking = true;
-
-        ShakerAnim.SteShakerAnimState(ShakerAnimState.Shake);
-        Button_Shake.gameObject.SetActive(false);
-        Button_Stop.gameObject.SetActive(true);
-        Button_Stop.UnBindOnClickButtonEvent(OnClick_Stop);
-        Button_Stop.BindOnClickButtonEvent(OnClick_Stop);
-        Button_Submit.gameObject.SetActive(false);
-    }
-
     private void OnClick_Stop()
     {
         Debug.Log("OnClick_Stop 호출됨!");
@@ -236,7 +234,7 @@ public class MakeCocktailUI : DaniTechUIBase
         var dataManager = DaniTechGameDataManager.Instance;
         if (dataManager == null || dataManager.CocktailRecipeDataList == null) return;
 
-        _currentMatchedRecipe = FindMatchedRecipe(dataManager);
+        _currentMatchedRecipe = MatchedRecipe(dataManager);
 
         if (_currentMatchedRecipe != null)
         {
@@ -248,6 +246,35 @@ public class MakeCocktailUI : DaniTechUIBase
         }
     }
 
+    private void OnClick_Submit()
+    {
+        Debug.Log("OnClick_Submit 호출됨!");
+        Debug.Log($"_currentMatchedRecipe null 여부: {_currentMatchedRecipe == null}");
+
+        if (_currentMatchedRecipe == null)
+        {
+            Debug.LogWarning("매칭된 레시피가 없습니다.");
+            return;
+        }
+
+        string recipeId = _currentMatchedRecipe.Id;
+        Debug.Log($"recipeId: {recipeId}");
+
+        bool isSuccess = false;
+        if (_currentGuest == null)
+        {
+            isSuccess = (recipeId == "Cocktail_SugarRush_2" || recipeId == "Cocktail_PianoMan_2");
+        }
+        else
+        {
+            isSuccess = (_currentGuest.OrderCocktailId == recipeId);
+        }
+
+        if (isSuccess) OnSubmitSuccess();
+        else OnSubmitFail();
+    }
+
+    // 요 부분은 AI가 많이 도와줬습니다,,, ======================= 기능 관련 메서드들 입니다 =====================
 
     // 손님 관련
     private GuestData _currentGuest;
@@ -286,15 +313,22 @@ public class MakeCocktailUI : DaniTechUIBase
 
     }
 
-    private CocktailRecipeData FindMatchedRecipe(DaniTechGameDataManager dataManager)
+    private CocktailRecipeData MatchedRecipe(DaniTechGameDataManager dataManager)
     {
         foreach (var kv in dataManager.CocktailRecipeDataList)
         {
             var recipe = kv.Value;
 
-            bool isKarmotrineMatch = recipe.Optional
-            ? true
-            : recipe.Karmotrine == _countKarmotrine;
+            bool isKarmotrineMatch = false;
+
+            if (recipe.Optional == true)
+            {
+                isKarmotrineMatch = true;
+            }
+            else
+            {
+                isKarmotrineMatch = recipe.Karmotrine == _countKarmotrine;
+            }
 
             if (recipe.Adelhyde == _countAdelhyde &&
                 recipe.BronsonExt == _countBronsonExt &&
@@ -334,34 +368,6 @@ public class MakeCocktailUI : DaniTechUIBase
             Image_Result.gameObject.SetActive(true);
             DaniTechGameUtil.LoadAndSetSpriteImage(Image_Result, failData.IconPath).Forget();
         }
-    }
-
-    private void OnClick_Submit()
-    {
-        Debug.Log("OnClick_Submit 호출됨!");
-        Debug.Log($"_currentMatchedRecipe null 여부: {_currentMatchedRecipe == null}");
-
-        if (_currentMatchedRecipe == null)
-        {
-            Debug.LogWarning("매칭된 레시피가 없습니다.");
-            return;
-        }
-
-        string recipeId = _currentMatchedRecipe.Id;
-        Debug.Log($"recipeId: {recipeId}");
-
-        bool isSuccess = false;
-        if (_currentGuest == null)
-        {
-            isSuccess = (recipeId == "Cocktail_SugarRush_2" || recipeId == "Cocktail_PianoMan_2");
-        }
-        else
-        {
-            isSuccess = (_currentGuest.OrderCocktailId == recipeId);
-        }
-
-        if (isSuccess) OnSubmitSuccess();
-        else OnSubmitFail();
     }
 
     private void OnSubmitSuccess()
@@ -470,11 +476,6 @@ public class MakeCocktailUI : DaniTechUIBase
         {
             _slot_GroupTop[i].gameObject.SetActive(i < (total - 10));
         }
-    }
-
-    private void OnFailDialogueEnd()
-    {
-        DaniTechUIManager.Instance.OpenContentUI(DaniTechUIType.MakeCocktailUI);
     }
 
     private void HideShaker()

@@ -21,7 +21,8 @@ public class PhoneRobbyPopupUI : DaniTechUIBase
 
     private void OnClickMusicCgange()
     {
-
+        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.MusicPlayerPopupUI);
+        Debug.Log("음악 팝업이 열립니다.");
     }
 
     private void OnClickSave()

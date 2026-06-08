@@ -35,7 +35,8 @@ public enum DaniTechUIType
     AugmenredEyeTextPopupUI,
     EndingPopupUI,
     FadePopupUI,
-    SettingPopupUI
+    SettingPopupUI,
+    MusicPlayerPopupUI
 }
 
 public static class DaniTechUIManagerExtension

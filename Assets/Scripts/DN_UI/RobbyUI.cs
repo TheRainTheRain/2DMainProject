@@ -36,7 +36,7 @@ public class RobbyUI : DaniTechUIBase
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.PhoneRobbyPopupUI);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyePopupUI);
         DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.AugmenredEyeTextPopupUI);
-
+        DaniTechUIManager.Instance.ClosePopupUI(DaniTechUIType.MusicPlayerPopupUI);
         Debug.Log("메인 UI로 넘어갑니다.");
     }
 

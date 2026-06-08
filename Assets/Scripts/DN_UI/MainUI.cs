@@ -5,12 +5,14 @@ public class MainUI : DaniTechUIBase
     [SerializeField] private DaniTechUIButton Button_Exit;
     [SerializeField] private DaniTechUIButton Button_OpenCocktailList;
     [SerializeField] private DaniTechUIButton Button_Setting;
+    [SerializeField] private DaniTechUIButton Button_MusicPlayer;
 
     private void OnEnable()
     {
         Button_Exit.BindOnClickButtonEvent(OnClick_Exit);
         Button_OpenCocktailList.BindOnClickButtonEvent(OnClick_CocktailList);
         Button_Setting.BindOnClickButtonEvent(OnClick_Setting);
+        Button_MusicPlayer.BindOnClickButtonEvent(OnClick_MusicPlayer);
     }
 
     private void OnClick_Exit()
@@ -28,5 +30,10 @@ public class MainUI : DaniTechUIBase
     private void OnClick_Setting()
     {
         DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.SettingPopupUI);
+    }
+
+    private void OnClick_MusicPlayer()
+    {
+        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.MusicPlayerPopupUI);
     }
 }
